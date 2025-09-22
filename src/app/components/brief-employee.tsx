@@ -13,8 +13,10 @@ export default function BriefEmployee() {
                         Đội ngũ SkyHome
                     </h2> */}
                     <p className="text-lg lg:text-2xl text-gray-700 mb-6 max-w-xl">
-                        SkyHome hiểu rằng, ai cũng có những dự định và ước mơ riêng, ai cũng mong muốn mình đủ tự tin và sự chủ động để hiện thực hoá chúng.
-                        SkyHom luôn muốn mạng lại cho khách hàng những tiện ích... dù bạn là ai, ở độ tuổi nào, bạn sẽ luôn chủ động cuộc sống, và việc nhà còn là rào cản của bạn nữa. (Câu tương tự ý này chuẩn SEO)
+                        SkyHome hiểu rằng mỗi khách hàng đều có những nhu cầu riêng về vệ sinh. Vì thế, chúng tôi mang đến dịch vụ vệ sinh đa dạng
+                        – từ dịch vụ vệ sinh nhà ở, vệ sinh văn phòng,
+                        đến vệ sinh định kỳ hay tổng vệ sinh toàn diện. Dù là không gian sống hay nơi làm việc,
+                        SkyHome luôn hướng đến sự sạch sẽ, gọn gàng và trong lành, để bạn thoải mái tận hưởng môi trường an toàn mỗi ngày.
                     </p>
                 </div>
                 {/* Right image */}
@@ -22,9 +24,9 @@ export default function BriefEmployee() {
                     <Image
                         width={1200}
                         height={1200}
-                        src="/home-page/employee.png"
+                        src="/home-page/employee.webp"
                         alt="SkyHome Employee"
-                        className="w-full max-w-xl rounded-2xl shadow-2xl object-cover"
+                        className="w-full max-w-xl object-cover"
                     />
                 </div>
             </div>
