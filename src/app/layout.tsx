@@ -2,7 +2,6 @@
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { ViewportProvider } from "@/providers/viewport-provider";
-import { Footer } from "@/components/layout/footer";
 import { SkyHomeFont } from "@/config/font/fonts";
 import { Metadata } from "next";
 

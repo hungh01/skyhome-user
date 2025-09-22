@@ -3,42 +3,51 @@ import { useViewportContext } from "@/providers/viewport-provider";
 import Image from "next/image";
 
 export default function MainContent() {
-    const { isMobile, width } = useViewportContext();
+    const { isMobile } = useViewportContext();
 
 
     return (
-        <section id="section1" className={`w-full ${isMobile ? 'h-auto' : 'h-screen'} relative overflow-hidden pt-3`}>
+        <section id="section1" className={`w-[76%] ${isMobile ? 'h-auto' : 'h-screen'} `}>
             {/* Content */}
-            <div className="w-full h-screen flex flex-col items-center justify-center ">
+            <div className="container mx-auto px-4 h-full flex flex-col lg:flex-row items-center justify-center content ">
                 <div className="flex flex-col lg:flex-row items-center justify-between h-full w-full px-4 pt-6 lg:py-0">
-                    {/* Left Content */}
-                    <div className="flex-1 max-w-2xl text-center lg:text-left mb-4 lg:mb-0 order-1 pt-14 lg:order-1">
-                        <h1 className={`text-2xl ${width < 1058 && width > 810 ? 'text-5xl' : ''} ${width < 850 ? 'text-3xl' : ''} ${width > 1058 ? 'text-6xl' : ''} font-bold text-sky-900 leading-tight mb-6`}>
-                            SkyHome nay là
-                            <br />
-                            Tiện ích cho
-                            <br />
-                            Tiêu chuẩn sống mới
+                    <div className="flex-1 flex flex-col justify-center items-start text-left">
+                        <h1 className="font-bold text-sky-900 leading-snug tracking-wide">
+                            <span
+                                className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-4"
+                                style={{ justifyContent: "flex-start", display: "flex" }}
+                            >
+                                SkyHome
+                            </span>
+                            <span
+                                className="block text-3xl sm:text-4xl md:text-5xl lg:text-[67px] mb-2"
+                                style={{ justifyContent: "flex-start", display: "flex" }}
+                            >
+                                Góc nào cũng
+                            </span>
+                            <span
+                                className="block text-4xl sm:text-5xl md:text-6xl lg:text-[98px]  font-extrabold tracking-widest"
+                                style={{ justifyContent: "flex-start", display: "flex" }}
+                            >
+                                “SẠCH”
+                            </span>
                         </h1>
-                        {/* <p className="text-xs sm:text-lg text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
-                            Luôn lắng nghe phản hồi, giải quyết vấn đề nhanh chóng <br /> và chuyên nghiệp để đảm bảo sự hài lòng tối đa
-                        </p> */}
-
-                        {/* <NavigationButton text="Liên hệ với chúng tôi" href="/contact" /> */}
                     </div>
+
 
                     {/* Right Content - Phone Mockup */}
                     <div className=" h-screen flex-1 flex justify-center items-center lg:justify-end order-2 lg:order-2 mb-0 lg:mb-0 lg:pt-0">
-                        <div className="relative">
+                        <div id="imageWrapper" className="relative w-[500px] h-[500px] z-50">
                             <Image
                                 id="myImage"
                                 src={"/home-page/phone.webp"}
                                 alt="Phone Mockup"
-                                width={400}
-                                height={400}
+                                width={600}
+                                height={600}
                                 className="w-full h-auto"
                             />
                         </div>
+
                     </div>
                 </div>
             </div>
