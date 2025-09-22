@@ -24,7 +24,7 @@ export function Header() {
         <>
 
             <header className={`shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white snap-start h-auto w-full`}>
-                <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center transition-all duration-300 ${scrollY > 200 ? 'h-16' : 'h-20'}`}>
+                <div className={`max-w-[76%] mx-auto px-4 sm:px-6 lg:px-8 flex items-center transition-all duration-300 ${scrollY > 200 ? 'h-16' : 'h-20'}`}>
                     {/* Desktop Layout */}
                     {width > 1057 && (
                         <div className="hidden md:flex items-center justify-between w-full">

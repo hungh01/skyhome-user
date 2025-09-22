@@ -12,6 +12,7 @@ import { BriefAbout } from "./components/brief-about";
 import BriefEmployee from "./components/brief-employee";
 
 import { initParallaxBg } from "./animations/parallax-bg";
+import { Footer } from "@/components/layout/footer";
 
 
 export default function Home() {
@@ -59,6 +60,9 @@ export default function Home() {
         </div>
         <div className="section min-h-screen flex  items-center justify-center">
           <BriefEmployee />
+        </div>
+        <div className="section min-h-screen flex  items-center justify-center">
+          <Footer />
         </div>
       </div>
     </section>

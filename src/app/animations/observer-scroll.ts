@@ -18,16 +18,35 @@ export const initSectionObserver = (sectionsSelector: string) => {
             scrollTo: { y: sections[index], autoKill: false },
             duration: 1,
             ease: "power2.inOut",
-            onComplete: () => { animating = false; },
+            onComplete: () => {
+                // Thêm delay nhỏ để block thao tác tiếp theo
+                setTimeout(() => {
+                    animating = false;
+                }, 400); // 400ms sau khi animation xong mới cho phép cuộn tiếp
+            },
         });
     };
-
     Observer.create({
         target: window,
         type: "wheel,touch",
-        wheelSpeed: 1, // Adjust scroll sensitivity
-        onUp: () => gotoSection(index - 1),
-        onDown: () => gotoSection(index + 1),
+        wheelSpeed: 1,
+        onUp: (self) => {
+            // Đảo chiều cho touch (mobile)
+            const isTouch = self.event && self.event.type && self.event.type.startsWith("touch");
+            if (isTouch) {
+                gotoSection(index + 1); // Vuốt lên thì xuống section tiếp theo
+            } else {
+                gotoSection(index - 1); // Wheel bình thường
+            }
+        },
+        onDown: (self) => {
+            const isTouch = self.event && self.event.type && self.event.type.startsWith("touch");
+            if (isTouch) {
+                gotoSection(index - 1); // Vuốt xuống thì lên section trước
+            } else {
+                gotoSection(index + 1); // Wheel bình thường
+            }
+        },
         tolerance: 10,
         preventDefault: true,
     });

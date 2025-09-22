@@ -12,7 +12,6 @@ export default function NotFound() {
                         className="text-2xl md:text-3xl font-light leading-normal"
                     >Sorry we couldn&apos;t find this page. </p>
                     <p className="mb-8">But dont worry, you can find plenty of other things on our homepage.</p>
-
                     <NavigationButton
                         href="/"
                         text="Go Home"
