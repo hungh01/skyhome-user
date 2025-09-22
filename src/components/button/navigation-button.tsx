@@ -16,7 +16,7 @@ export default function NavigationButton({ text, href = "#", textsize = "text-sm
         >
             <span className="bg-transparent absolute -end-full transition-all group-hover:end-4">
                 <Image
-                    src="/icon/arrow-right.svg"
+                    src="/icons/others/arrow-right.svg"
                     alt="Right arrow"
                     width={20}
                     height={20}

@@ -44,16 +44,16 @@ export function Header() {
                                 <Link href="/about" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
                                     Công ty
                                 </Link>
-                                <Link href="/customerservice" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/individual-customers" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
                                     Khách hàng cá nhân
                                 </Link>
-                                <Link href="#" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/business-customers" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
                                     Khách hàng doanh nghiệp
                                 </Link>
-                                <Link href="#" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/news" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
                                     Tin tức
                                 </Link>
-                                <Link href="#" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="support" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
                                     Hỗ trợ
                                 </Link>
                             </nav>
@@ -112,22 +112,22 @@ export function Header() {
                                                 >
                                                     Công ty
                                                 </Link>
-                                                <Link href="/customerservice" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
+                                                <Link href="/individual-customers" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
                                                     onClick={() => setIsOpen(false)}
                                                 >
                                                     Khách hàng cá nhân
                                                 </Link>
-                                                <Link href="#" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
+                                                <Link href="/business-customers" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
                                                     onClick={() => setIsOpen(false)}
                                                 >
                                                     Khách hàng doanh nghiệp
                                                 </Link>
-                                                <Link href="#" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
+                                                <Link href="/news" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
                                                     onClick={() => setIsOpen(false)}
                                                 >
                                                     Tin tức
                                                 </Link>
-                                                <Link href="#" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
+                                                <Link href="/support" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900"
                                                     onClick={() => setIsOpen(false)}
                                                 >
                                                     Hỗ trợ
