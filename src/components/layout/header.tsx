@@ -166,7 +166,7 @@ export function Header() {
                                 <div className="flex-shrink-0">
                                     <Link href="/" className="flex-shrink-0 cursor-pointer">
                                         <Image
-                                            src={"/logo-company.svg"}
+                                            src={"/logo/logo-company.svg"}
                                             alt="Logo"
                                             width={scrollY > 200 ? 100 : 125}
                                             height={scrollY > 200 ? 24 : 30}

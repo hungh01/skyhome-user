@@ -68,11 +68,14 @@ export default function ValuesProvided() {
     return (
         <section id="section2" className="w-full h-screen flex flex-col items-center justify-center relative">
             <div className="container mx-auto px-4 h-full flex flex-col lg:flex-row items-center justify-center content">
-                <div id="imageTarget" className="relative w-[550px] h-[550px] flex items-center justify-center z-50">
+                <div
+                    id="imageTarget"
+                    className="relative w-[220px] h-[220px] sm:w-[400px] sm:h-[400px] md:w-[550px] md:h-[550px] flex items-center justify-center z-50"
+                >
                     {/* Các box text */}
                     <div
                         ref={boxRefs[0]}
-                        className="absolute bg-white rounded-xl shadow-lg px-4 py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-2xl"
+                        className="absolute bg-white rounded-xl shadow-lg px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-[10px] sm:text-xl md:text-2xl"
                         style={{
                             filter: "drop-shadow(0 0 8px #ffe066)",
                             left: "50%",
@@ -85,7 +88,7 @@ export default function ValuesProvided() {
                     </div>
                     <div
                         ref={boxRefs[1]}
-                        className="absolute bg-white rounded-xl shadow-lg px-4 py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-2xl"
+                        className="absolute bg-white rounded-xl shadow-lg px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-[10px] sm:text-xl md:text-2xl"
                         style={{
                             filter: "drop-shadow(0 0 8px #ffe066)",
                             left: "50%",
@@ -98,7 +101,7 @@ export default function ValuesProvided() {
                     </div>
                     <div
                         ref={boxRefs[2]}
-                        className="absolute bg-white rounded-xl shadow-lg px-4 py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-2xl"
+                        className="absolute bg-white rounded-xl shadow-lg px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-[10px] sm:text-xl md:text-2xl"
                         style={{
                             filter: "drop-shadow(0 0 8px #ffe066)",
                             left: "50%",
@@ -111,7 +114,7 @@ export default function ValuesProvided() {
                     </div>
                     <div
                         ref={boxRefs[3]}
-                        className="absolute bg-white rounded-xl shadow-lg px-4 py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-2xl"
+                        className="absolute bg-white rounded-xl shadow-lg px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 text-sky-900 font-bold border border-yellow-300 whitespace-nowrap text-[10px] sm:text-xl md:text-2xl"
                         style={{
                             filter: "drop-shadow(0 0 8px #ffe066)",
                             left: "50%",
