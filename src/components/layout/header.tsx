@@ -45,11 +45,38 @@ export function Header({ currentPage }: { currentPage?: string }) {
                                 transition-colors  rounded-sm`}>
                                     Công ty
                                 </Link>
-                                <Link href="/individual-customers" className={`block px-4 py-2 
-                                ${currentPage === '/individual-customers' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
-                                transition-colors  rounded-sm`}>
-                                    Khách hàng cá nhân
-                                </Link>
+                                <div className="relative group">
+                                    <button
+                                        className={` px-4 py-2 transition-colors rounded-sm flex items-center space-x-2
+                                            ${currentPage === '/individual-customers' ? 'text-sky-900 text-sm font-bold bg-yellow-100' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}`}
+                                        type="button"
+                                    >
+                                        <span>Khách hàng cá nhân</span>
+                                    </button>
+                                    <div className="absolute left-0 top-full mt-2 min-w-[180px] bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-200 z-50">
+                                        <Link href="/individual-customers" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Tổng quan
+                                        </Link>
+                                        <Link href="/individual-customers/hourly-cleaning" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Vệ sinh theo giờ
+                                        </Link>
+                                        <Link href="/individual-customers/total-cleaning" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Tổng vệ sinh
+                                        </Link>
+                                        <Link href="/individual-customers/air-conditioning-cleaning" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Vệ sinh máy lạnh
+                                        </Link>
+                                        <Link href="/individual-customers/washing-machine-cleaning" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Vệ sinh máy giặt
+                                        </Link>
+                                        <Link href="/individual-customers/water-heater-cleaning" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Vệ sinh máy nóng lạnh
+                                        </Link>
+                                        <Link href="/individual-customers/others" className="block px-4 py-2 text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                            Dịch vụ khác
+                                        </Link>
+                                    </div>
+                                </div>
                                 <Link href="/business-customers" className={`block px-4 py-2 
                                 ${currentPage === '/business-customers' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
                                 transition-colors  rounded-sm`}>

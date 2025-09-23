@@ -1,4 +1,5 @@
 
+import { SkyHomeFont1 } from "@/config/font/fonts";
 import { useViewportContext } from "@/providers/viewport-provider";
 import Image from "next/image";
 
@@ -21,7 +22,7 @@ export default function MainContent() {
                                 SkyHome
                             </span>
                             <span
-                                className="block text-5xl sm:text-4xl md:text-6xl lg:text-[90px] mb-2"
+                                className="block text-5xl sm:text-6xl md:text-6xl lg:text-[90px] mb-2"
                                 style={{
                                     justifyContent: isMobile ? "center" : "flex-start",
                                     display: "flex",
@@ -30,7 +31,7 @@ export default function MainContent() {
                                 Góc nào cũng
                             </span>
                             <span
-                                className="block text-7xl sm:text-5xl md:text-8xl lg:text-[130px]  font-extrabold tracking-widest"
+                                className={`${SkyHomeFont1.className} block text-7xl sm:text-8xl md:text-9xl lg:text-[150px]  font-extrabold tracking-widest`}
                                 style={{ justifyContent: isMobile ? "center" : "flex-start", display: "flex" }}
                             >
                                 “SẠCH”
