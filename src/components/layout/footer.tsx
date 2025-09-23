@@ -9,7 +9,7 @@ export function Footer() {
     return (
         <footer className="bg-white snap-start h-screen w-full flex flex-col">
             <div className="h-1/2 bg-gradient-to-r text-sky-900 mt-16 flex items-end">
-                <div className="flex w-full h-[80%] mx-auto max-w-screen px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#FDDB00] via-[rgb(244,226,110)] to-[#FDDB00]">
+                <div className={`flex w-full ${isMobile ? "" : "h-[80%]"} mx-auto max-w-screen px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#FDDB00] via-[rgb(244,226,110)] to-[#FDDB00]`}>
 
                     <div className="flex-1 flex flex-col justify-center items-center text-center px-2 sm:px-4 h-full ml-4">
                         <div className="w-full max-w-lg flex flex-col h-auto justify-center ">
@@ -138,7 +138,7 @@ export function Footer() {
                 </div>
 
                 {/* Company Information */}
-                <div className="pb-6 mt-4 md:mt-6 pt-4 border-t border-gray-200">
+                <div className="pb-6 border-t border-gray-200">
                     <div className="text-xs text-gray-600">
                         <p className="font-semibold mb-1">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SKYHOME VIỆT NAM</p>
                         <p>Địa chỉ: 46 Cửu Long, phường Tân Sơn Hoà, TP Hồ Chí Minh</p>

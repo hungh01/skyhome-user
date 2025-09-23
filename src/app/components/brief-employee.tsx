@@ -18,7 +18,7 @@ export default function BriefEmployee() {
                                 </span>
                                 <br />
                             </span>
-                            <span className="text-[28px] lg:text-[45px] font-bold text-sky-900 ">
+                            <span className="text-[28px] lg:text-[38px] font-bold text-sky-900 ">
                                 Sạch sẽ, an toàn và bền vững
                             </span>
                         </h2>

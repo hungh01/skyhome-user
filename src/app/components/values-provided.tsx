@@ -2,14 +2,17 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default function ValuesProvided() {
+
     const boxRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+
+
     useEffect(() => {
         const boxes = boxRefs.map(ref => ref.current);
         const endStates = [
             { left: "-25%", top: "5%", transform: "none" },
-            { left: "-35%", top: "55%", transform: "none" },
-            { left: "135%", top: "45%", transform: "translate(-100%, -50%)" },
-            { left: "120%", top: "95%", transform: "translate(-100%, -50%)" },
+            { left: "-38%", top: "55%", transform: "none" },
+            { left: "128%", top: "45%", transform: "translate(-100%, -50%)" },
+            { left: "125%", top: "95%", transform: "translate(-100%, -50%)" },
         ];
 
         // Animate tất cả cùng lúc, tốc độ chậm lại
@@ -70,7 +73,7 @@ export default function ValuesProvided() {
             <div className="container mx-auto px-4 h-full flex flex-col lg:flex-row items-center justify-center content">
                 <div
                     id="imageTarget"
-                    className="relative w-[220px] h-[220px] sm:w-[400px] sm:h-[400px] md:w-[550px] md:h-[550px] flex items-center justify-center z-50"
+                    className="relative w-[220px] h-[220px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] flex items-center justify-center z-50"
                 >
                     {/* Các box text */}
                     <div
@@ -110,7 +113,7 @@ export default function ValuesProvided() {
                             opacity: 0,
                         }}
                     >
-                        Đúng và đủ nhu cầu
+                        Dịch vụ đa dạng
                     </div>
                     <div
                         ref={boxRefs[3]}
@@ -123,7 +126,7 @@ export default function ValuesProvided() {
                             opacity: 0,
                         }}
                     >
-                        Dành cho mọi người
+                        Sạch từng ngóc ngách
                     </div>
                 </div>
             </div>
