@@ -11,7 +11,7 @@ export function Footer() {
             <div className="h-1/2 bg-gradient-to-r text-sky-900 mt-16 flex items-end">
                 <div className="flex w-full h-[80%] mx-auto max-w-screen px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#FDDB00] via-[rgb(244,226,110)] to-[#FDDB00]">
 
-                    <div className="flex-1 flex flex-col justify-center items-center text-center px-2 sm:px-4 h-full">
+                    <div className="flex-1 flex flex-col justify-center items-center text-center px-2 sm:px-4 h-full ml-4">
                         <div className="w-full max-w-lg flex flex-col h-auto justify-center ">
                             <div className="flex flex-row justify-center items-center space-x-4 mb-6 space-y-0 w-full">
                                 <a href="#" className="inline-block w-auto">
@@ -45,13 +45,13 @@ export function Footer() {
                             </div>)}
                         </div>
                     </div>
-                    {!isMobile && (<div className="flex-1 flex justify-center items-end">
+                    {!isMobile && (<div className="flex-1 flex justify-start items-end">
                         <Image
                             src="/footer/employee.webp"
                             alt="Employee"
                             width={400}
                             height={500}
-                            className="w-[200px] md:w-[400px] lg:w-[650px] h-auto"
+                            className="w-[200px] md:w-[400px] lg:w-[590px] h-auto"
                         />
                     </div>)}
                 </div>

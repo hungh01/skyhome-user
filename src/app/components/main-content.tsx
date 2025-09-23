@@ -15,13 +15,13 @@ export default function MainContent() {
                         <h1 className="font-bold text-sky-900 leading-snug tracking-wide"
                             style={{ marginBottom: isMobile ? "100px" : "0px" }}>
                             <span
-                                className="block text-5xl sm:text-5xl md:text-7xl lg:text-8xl mb-4"
+                                className="block text-7xl sm:text-8xl md:text-8xl lg:text-9xl mb-4"
                                 style={{ justifyContent: isMobile ? "center" : "flex-start", display: "flex" }}
                             >
                                 SkyHome
                             </span>
                             <span
-                                className="block text-4xl sm:text-4xl md:text-5xl lg:text-[67px] mb-2"
+                                className="block text-5xl sm:text-4xl md:text-6xl lg:text-[90px] mb-2"
                                 style={{
                                     justifyContent: isMobile ? "center" : "flex-start",
                                     display: "flex",
@@ -30,7 +30,7 @@ export default function MainContent() {
                                 Góc nào cũng
                             </span>
                             <span
-                                className="block text-5xl sm:text-5xl md:text-6xl lg:text-[98px]  font-extrabold tracking-widest"
+                                className="block text-7xl sm:text-5xl md:text-8xl lg:text-[130px]  font-extrabold tracking-widest"
                                 style={{ justifyContent: isMobile ? "center" : "flex-start", display: "flex" }}
                             >
                                 “SẠCH”

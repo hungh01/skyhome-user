@@ -1,3 +1,4 @@
+import { SkyHomeFont1 } from "@/config/font/fonts";
 import Image from "next/image";
 
 export default function BriefEmployee() {
@@ -10,6 +11,18 @@ export default function BriefEmployee() {
                 {/* Left content */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center mb-8 lg:mb-0 lg:pt-0 pt-12">
                     <div className="w-full lg:w-[80%]">
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-sky-900 ">
+                            <span>
+                                SkyHome<span className={`${SkyHomeFont1.className} lg:text-[55px] text-4xl`}>
+                                    {" "} Hệ sinh thái
+                                </span>
+                                <br />
+                            </span>
+                            <span className="text-[28px] lg:text-[45px] font-bold text-sky-900 ">
+                                Sạch sẽ, an toàn và bền vững
+                            </span>
+                        </h2>
+
                         <p className="text-base md:text-lg lg:text-xl text-sky-900 mb-6 max-w-xl mx-auto">
                             &quot;SkyHome hiểu rằng mỗi khách hàng đều có những nhu cầu riêng về vệ sinh. Vì thế, chúng tôi mang đến dịch vụ vệ sinh đa dạng
                             – từ dịch vụ vệ sinh nhà ở, vệ sinh văn phòng,

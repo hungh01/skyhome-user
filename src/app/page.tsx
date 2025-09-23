@@ -13,7 +13,6 @@ import BriefEmployee from "./components/brief-employee";
 
 import { initParallaxBg } from "./animations/parallax-bg";
 import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
 
 
 export default function Home() {
@@ -36,7 +35,7 @@ export default function Home() {
 
   return (
     <section className=" flex flex-col items-center justify-center bg-white">
-      <Header />
+
       {/* Background cố định */}
       <div className="fixed inset-0 z-0">
         <Image
