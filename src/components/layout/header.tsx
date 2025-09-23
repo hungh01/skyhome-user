@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { useViewportContext } from "@/providers/viewport-provider";
 import DownloadButton from "@/components/button/download-button";
+import { scrollToTop } from "@/app/animations/scroll-to-top";
 
 
 
@@ -24,7 +25,7 @@ export function Header() {
         <>
 
             <header className={`shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white snap-start h-auto w-full`}>
-                <div className={`max-w-[76%] mx-auto px-4 sm:px-6 lg:px-8 flex items-center transition-all duration-300 ${scrollY > 200 ? 'h-16' : 'h-20'}`}>
+                <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center transition-all duration-300 ${scrollY > 200 ? 'h-16' : 'h-20'}`}>
                     {/* Desktop Layout */}
                     {width > 1057 && (
                         <div className="hidden md:flex items-center justify-between w-full">
@@ -180,9 +181,9 @@ export function Header() {
                         </div>)}
                 </div>
             </header>
-            {scrollY > 200 && (
+            {/* {scrollY > 200 && (
                 <button
-                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    onClick={scrollToTop}
                     className="fixed bottom-6 right-6 z-50 bg-yellow-400 hover:bg-yellow-500 text-white rounded-full shadow-lg p-3 transition-all duration-300"
                     aria-label="Scroll to top"
                 >
@@ -196,7 +197,7 @@ export function Header() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
                     </svg>
                 </button>
-            )}
+            )} */}
         </>
     );
 } 

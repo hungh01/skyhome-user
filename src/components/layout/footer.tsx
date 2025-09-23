@@ -1,57 +1,62 @@
 import Image from "next/image";
 import DownloadButton from "@/components/button/download-button";
 import Link from "next/link";
+import { useViewportContext } from "@/providers/viewport-provider";
 
 
 export function Footer() {
+    const { isMobile } = useViewportContext();
     return (
         <footer className="bg-white snap-start h-screen w-full flex flex-col">
             <div className="h-1/2 bg-gradient-to-r text-sky-900 mt-16 flex items-end">
                 <div className="flex w-full h-[80%] mx-auto max-w-screen px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#FDDB00] via-[rgb(244,226,110)] to-[#FDDB00]">
 
-                    <div className="flex-1 flex flex-col justify-center items-center text-center">
-                        <div className="">
-                            <div className="flex justify-center space-x-4 mb-6">
-                                <a href="#" className="inline-block">
-                                    <Image src="/footer/download-ios.png" alt="App Store" width={160} height={48} />
+                    <div className="flex-1 flex flex-col justify-center items-center text-center px-2 sm:px-4 h-full">
+                        <div className="w-full max-w-lg flex flex-col h-auto justify-center ">
+                            <div className="flex flex-row justify-center items-center space-x-4 mb-6 space-y-0 w-full">
+                                <a href="#" className="inline-block w-auto">
+                                    <Image src="/footer/download-ios.png" alt="App Store" width={160} height={48} className="w-full sm:w-[160px] h-auto max-w-[120px] sm:max-w-none mx-auto" />
                                 </a>
-                                <a href="#" className="inline-block">
-                                    <Image src="/footer/download-android.png" alt="Google Play" width={160} height={48} />
+                                <a href="#" className="inline-block w-auto">
+                                    <Image src="/footer/download-android.png" alt="Google Play" width={160} height={48} className="w-full sm:w-[160px] h-auto max-w-[120px] sm:max-w-none mx-auto" />
                                 </a>
                             </div>
-                            <div className="flex justify-center mb-4">
+                            <div className="flex justify-center mb-2">
                                 {[...Array(5)].map((_, i) => (
-                                    <svg key={i} className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" /></svg>
+                                    <svg key={i} className="w-6 h-6 sm:w-7 sm:h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" />
+                                    </svg>
                                 ))}
                             </div>
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-sky-900">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-4 text-sky-900">
                                 Tải ứng dụng ngay
                             </h2>
-                            <p className="text-base md:text-lg mb-6 md:mb-8 text-gray-800">
+                            <p className="text-sm sm:text-base md:text-lg mb-1 md:mb-6 text-gray-800">
                                 Để trải nghiệm những dịch vụ tốt nhất của SkyHome.
                             </p>
-                            <div className="flex space-x-4 mt-2">
-                                <Link href="/individual-customers" className="bg-white rounded-full px-6 py-2 font-semibold text-sky-900 border border-gray-300 shadow hover:bg-yellow-100 transition">
+
+                            {!isMobile && (<div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 items-center justify-center w-full">
+                                <Link href="/individual-customers" className="bg-white rounded-full px-4 sm:px-6 py-2 font-semibold text-sky-900 border border-gray-300 shadow hover:bg-yellow-100 transition text-xs sm:text-base w-full sm:w-auto mb-2 sm:mb-0">
                                     Khách hàng cá nhân
                                 </Link>
-                                <Link href="/business-customers" className="bg-white rounded-full px-6 py-2 font-semibold text-sky-900 border border-gray-300 shadow hover:bg-yellow-100 transition">
+                                <Link href="/business-customers" className="bg-white rounded-full px-4 sm:px-6 py-2 font-semibold text-sky-900 border border-gray-300 shadow hover:bg-yellow-100 transition text-xs sm:text-base w-full sm:w-auto">
                                     Khách hàng doanh nghiệp
                                 </Link>
-                            </div>
+                            </div>)}
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-center items-end">
+                    {!isMobile && (<div className="flex-1 flex justify-center items-end">
                         <Image
                             src="/footer/employee.webp"
                             alt="Employee"
                             width={400}
                             height={500}
-                            className="w-[200px] md:w-[400px] lg:w-[550px] h-auto"
+                            className="w-[200px] md:w-[400px] lg:w-[650px] h-auto"
                         />
-                    </div>
+                    </div>)}
                 </div>
             </div>
-            <div className="h1/2 mx-auto px-4 w-[76%] md:pt-4 sm:pt-2 lg:pt-8">
+            <div className="h1/2 mx-auto px-4 w-[74%] md:pt-4 sm:pt-2 lg:pt-8">
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
 
                     {/* Hỗ trợ */}
@@ -133,7 +138,7 @@ export function Footer() {
                 </div>
 
                 {/* Company Information */}
-                <div className="mt-8 md:mt-12 pt-4 border-t border-gray-200">
+                <div className="pb-6 mt-4 md:mt-6 pt-4 border-t border-gray-200">
                     <div className="text-xs text-gray-600">
                         <p className="font-semibold mb-1">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SKYHOME VIỆT NAM</p>
                         <p>Địa chỉ: 46 Cửu Long, phường Tân Sơn Hoà, TP Hồ Chí Minh</p>
