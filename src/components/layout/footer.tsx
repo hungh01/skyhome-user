@@ -1,5 +1,5 @@
+'use client';
 import Image from "next/image";
-import DownloadButton from "@/components/button/download-button";
 import Link from "next/link";
 import { useViewportContext } from "@/providers/viewport-provider";
 

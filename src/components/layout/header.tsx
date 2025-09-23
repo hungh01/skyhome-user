@@ -5,12 +5,9 @@ import Link from "next/link";
 
 import { useViewportContext } from "@/providers/viewport-provider";
 import DownloadButton from "@/components/button/download-button";
-import { scrollToTop } from "@/app/animations/scroll-to-top";
 
 
-
-
-export function Header() {
+export function Header({ currentPage }: { currentPage?: string }) {
     const { width } = useViewportContext();
     const [scrollY, setScrollY] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
@@ -42,19 +39,30 @@ export function Header() {
 
                             {/* Navigation Menu */}
                             <nav className="flex space-x-4 font-bold">
-                                <Link href="/about" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/about"
+                                    className={`block px-4 py-2 
+                                ${currentPage === '/about' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
+                                transition-colors  rounded-sm`}>
                                     Công ty
                                 </Link>
-                                <Link href="/individual-customers" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/individual-customers" className={`block px-4 py-2 
+                                ${currentPage === '/individual-customers' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
+                                transition-colors  rounded-sm`}>
                                     Khách hàng cá nhân
                                 </Link>
-                                <Link href="/business-customers" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/business-customers" className={`block px-4 py-2 
+                                ${currentPage === '/business-customers' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
+                                transition-colors  rounded-sm`}>
                                     Khách hàng doanh nghiệp
                                 </Link>
-                                <Link href="/news" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/news" className={`block px-4 py-2 
+                                ${currentPage === '/news' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
+                                transition-colors  rounded-sm`}>
                                     Tin tức
                                 </Link>
-                                <Link href="support" className="block px-4 py-2 text-gray-700 text-sm font-bold transition-colors hover:bg-yellow-100 hover:text-sky-900 rounded-sm">
+                                <Link href="/support" className={`block px-4 py-2 
+                                ${currentPage === '/support' ? 'text-sky-900 text-sm font-bold bg-yellow-100 ' : 'text-gray-700 text-sm font-medium hover:bg-yellow-100 hover:text-sky-900'}
+                                transition-colors  rounded-sm`}>
                                     Hỗ trợ
                                 </Link>
                             </nav>

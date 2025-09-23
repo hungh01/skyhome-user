@@ -7,7 +7,7 @@ export default function AboutLayout({ children }: {
 }) {
     return (
         <div>
-            <Header />
+            <Header currentPage="/about" />
             {children}
             <Footer />
         </div>
