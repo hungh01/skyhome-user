@@ -1,16 +1,17 @@
+import MainSection from "@/components/service-form/main-section";
 
 
 export default function BusinessCustomers() {
     return (
-        <div className="w-full text-sky-900 bg-[url('/home-page/sky.webp')] bg-cover bg-center">
-            <div className="section min-h-screen flex flex-col items-center justify-center">
-                <h1 className="text-4xl font-bold text-center">Business Customer</h1>
-                <p className="text-lg max-w-3xl text-center">
-                    Welcome to SkyHome! We are dedicated to providing top-notch cleaning services that ensure your living and working spaces are spotless and comfortable.
-                    Our team of professionals is committed to excellence, using eco-friendly products and the latest techniques to deliver outstanding results.
-                    Whether you need regular maintenance or a one-time deep clean, SkyHome is here to exceed your expectations and create a healthier environment for you and your loved ones.
-                </p>
-            </div>
+        <div className="min-h-screen">
+            <MainSection
+                title1="Dịch vụ"
+                title2="Tiện ích"
+                description="Dịch vụ dọn dẹp theo giờ của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
+                buttonText="Giá trị mang lại"
+                buttonLink="/individual-customers/hourly-cleaning/service-form"
+                imageSrc="/footer/employee.webp"
+            />
         </div>
     )
 }

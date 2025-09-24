@@ -1,8 +1,8 @@
-import MainSection from "../components/service-form/main-section";
-import ServiceProtected from "../components/service-form/service-protected";
-import UserManual from "../components/service-form/user-manual";
-import WhyChoose from "../components/service-form/why-choose";
-import WorkFlow from "../components/service-form/work-flow";
+import MainSection from "@/components/service-form/main-section";
+import ServiceProtected from "@/components/service-form/service-protected";
+import UserManual from "@/components/service-form/user-manual";
+import WhyChoose from "@/components/service-form/why-choose";
+import WorkFlow from "@/components/service-form/work-flow";
 
 interface step {
     title: string;
@@ -21,18 +21,28 @@ export default function HourlyCleaning() {
     const steps: step[] = [
         {
             title: "Bước 1",
-            description: "Mô tả bước 1",
-            imageSrc: "/images/step1.jpg"
+            description: "Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1",
+            imageSrc: "/about/review/customer5.jpg"
         },
         {
             title: "Bước 2",
-            description: "Mô tả bước 2",
-            imageSrc: "/images/step2.jpg"
+            description: "Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2",
+            imageSrc: "/about/review/customer1.png"
         },
         {
             title: "Bước 3",
-            description: "Mô tả bước 3",
-            imageSrc: "/images/step3.jpg"
+            description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
+            imageSrc: "/about/review/customer5.jpg"
+        },
+        {
+            title: "Bước 4",
+            description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
+            imageSrc: "/about/review/customer6.jpg"
+        },
+        {
+            title: "Bước 5",
+            description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
+            imageSrc: "/about/review/customer5.jpg"
         }
     ];
 
@@ -45,7 +55,7 @@ export default function HourlyCleaning() {
         {
             title: "Dịch vụ linh hoạt",
             description: "Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.",
-            icon: "https://img.icons8.com/material-outlined/24/online-support.png"
+            icon: "https://img.icons8.com/ios-filled/50/online-support.png"
         },
         {
             title: "Bảo đảm an toàn",
@@ -87,15 +97,19 @@ export default function HourlyCleaning() {
         <div className="min-h-screen">
             <MainSection
                 title1="Dịch vụ"
-                title2="Dọn dẹp theo giờ"
+                title2="Vệ sinh theo giờ"
                 description="Dịch vụ dọn dẹp theo giờ của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
                 buttonText="Đặt dịch vụ ngay"
                 buttonLink="/individual-customers/hourly-cleaning/service-form"
-                imageSrc="/individual-customers/hourly-cleaning/hero-image.jpg"
+                imageSrc="/individual-service/vstheogio.png"
             />
-            <ServiceProtected title="An tâm với dịch vụ" description="Chúng tôi cam kết bảo vệ quyền lợi của khách hàng với dịch vụ chất lượng cao và đội ngũ nhân viên chuyên nghiệp." />
+            <ServiceProtected
+                title="An tâm với dịch vụ"
+                description="Tại SkyHome, chúng tôi luôn đặt sự an tâm và hài lòng của khách hàng lên hàng đầu. Mỗi dịch vụ vệ sinh không chỉ dừng lại ở việc làm sạch, mà còn là cam kết về chất lượng, uy tín và sự chuyên nghiệp. Chúng tôi hiểu rằng mỗi gia đình, mỗi doanh nghiệp đều có nhu cầu và tiêu chuẩn riêng, vì thế SkyHome luôn lắng nghe và đưa ra giải pháp phù hợp, từ vệ sinh nhà ở, văn phòng, cho đến dịch vụ định kỳ và tổng vệ sinh toàn diện. 
+                Với đội ngũ nhân viên được đào tạo bài bản, tác phong chuyên nghiệp, SkyHome cam kết mang đến sự chỉn chu trong từng chi tiết, từ những góc nhỏ khó thấy đến toàn bộ không gian. Tất cả đều hướng đến mục tiêu tạo ra một môi trường sạch sẽ, gọn gàng, an toàn và trong lành, giúp khách hàng tận hưởng sự thoải mái tuyệt đối.
+                Lựa chọn SkyHome, bạn không chỉ nhận được một dịch vụ vệ sinh đơn thuần, mà còn là sự đồng hành đáng tin cậy trong việc kiến tạo và gìn giữ không gian sống, không gian làm việc chuẩn mực. SkyHome – sạch sẽ để bạn luôn an tâm." />
             {/* Ensure these components do not cause state updates during render */}
-            <UserManual steps={steps} />
+            <UserManual serviceName={'Vệ sinh theo giờ'} steps={steps} />
             <WhyChoose items={features} />
             <WorkFlow items={workFlow} />
         </div>
