@@ -1,103 +1,121 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import gsap from "gsap";
+
+const feedbacks = [
+    { id: 1, name: "Xuân Hương", img: "/about/review/customer3.png", text: "Dịch vụ vệ sinh của SkyHome rất chuyên nghiệp. Nhân viên tận tâm, sạch sẽ, gọn gàng.", star: 5 },
+    { id: 2, name: "Phúc Tín", img: "/about/review/customer1.png", text: "Công ty tôi đã dùng dịch vụ vệ sinh văn phòng định kỳ. Nhân viên thân thiện, sạch sẽ từng chi tiết.", star: 5 },
+    { id: 3, name: "Quỳnh Trang", img: "/about/review/customer2.png", text: "Tôi chọn gói tổng vệ sinh toàn diện. Ngôi nhà sáng sủa, không khí trong lành hơn hẳn.", star: 5 },
+    { id: 4, name: "Hải Nam", img: "/about/review/customer4.png", text: "SkyHome làm việc cực kỳ chuyên nghiệp, nhân viên thân thiện và nhiệt tình.", star: 5 },
+    { id: 5, name: "Ngọc Lan", img: "/about/review/customer5.jpg", text: "Dịch vụ nhanh chóng, hiệu quả, nhà tôi sạch bong sáng bóng sau vài giờ.Dịch vụ nhanh chóng, hiệu quả, nhà tôi sạch bong sáng bóng sau vài giờ.Dịch vụ nhanh chóng, hiệu quả, nhà tôi sạch bong sáng bóng sau vài giờ.", star: 5 },
+    { id: 6, name: "Ngọc Linh", img: "/about/review/customer6.jpg", text: "Dịch vụ nhanh chóng, hiệu quả, nhà tôi sạch bong sáng bóng sau vài giờ.", star: 5 },
+
+];
 
 export default function CustomersFeedback() {
+    const [index, setIndex] = useState(0);
+    const cardRefs = useRef<HTMLDivElement[]>([]);
+
+    useEffect(() => {
+        cardRefs.current.forEach((card, i) => {
+            if (!card) return;
+
+            const offset = (i - index + feedbacks.length) % feedbacks.length;
+
+            let x = 0, scale = 0.8, opacity = 0, zIndex = 0;
+
+            if (offset === 0) {
+                // card center
+                x = 0;
+                scale = 1.1;
+                opacity = 1;
+                zIndex = 10;
+            } else if (offset === 1) {
+                // right
+                x = 350;
+                scale = 0.9;
+                opacity = 0.8;
+                zIndex = 5;
+            } else if (offset === feedbacks.length - 1) {
+                // left
+                x = -350;
+                scale = 0.9;
+                opacity = 0.8;
+                zIndex = 5;
+            } else {
+                // các card còn lại ẩn đi
+                x = 0;
+                scale = 0.7;
+                opacity = 0;
+                zIndex = 0;
+            }
+
+            gsap.to(card, {
+                x, scale, opacity, zIndex,
+                duration: 0.8,
+                ease: "power4.inOut"
+            });
+        });
+    }, [index]);
+
+    const prev = () => setIndex((prev) => (prev - 1 + feedbacks.length) % feedbacks.length);
+    const next = () => setIndex((prev) => (prev + 1) % feedbacks.length);
+
     return (
-        <section className="w-full py-16 ">
-            <h2 className="text-3xl font-bold text-center mb-10 text-sky-900">Feedback của khách hàng SkyHome</h2>
-            <div className="flex flex-row items-end justify-center gap-18 w-[72%] mx-auto">
-                {/* Card nhỏ trái */}
-                <div className="bg-white rounded-t-3xl rounded-bl-2xl shadow-[6px_6px_6px_6px_rgba(0,0,0,0.1)] p-6 w-64 flex flex-col justify-between mx-2">
-                    <div className="flex items-center mb-2">
-                        <svg className="w-8 h-8 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <text x="2" y="20" fontSize="20" fontWeight="bold">“</text>
-                        </svg>
-                        <div className="flex">
-                            {[...Array(5)].map((_, i) => (
-                                <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" />
+        <section className="w-[72%] py-16 mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-10 text-sky-900">
+                Feedback của khách hàng SkyHome
+            </h2>
+
+            <div className="relative flex items-center justify-center">
+                {/* Nút trái */}
+                <button
+                    onClick={prev}
+                    className="absolute left-10 top-1/2 -translate-y-1/2 bg-sky-900 text-white px-4 py-2 rounded-full shadow-md z-20"
+                >
+                    ◀
+                </button>
+
+                <div className="relative w-full h-[360px] flex justify-center items-center overflow-hidden">
+                    {feedbacks.map((fb, i) => (
+                        <div
+                            key={fb.id}
+                            ref={(el) => {
+                                if (el) cardRefs.current[i] = el;
+                            }}
+                            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-t-3xl rounded-bl-2xl shadow-[6px_6px_10px_10px_rgba(0,0,0,0.1)] p-6 w-80 min-h-72 flex flex-col justify-between"
+                        >
+                            <div className="flex items-center mb-2">
+                                <svg className="w-8 h-8 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <text x="2" y="20" fontSize="20" fontWeight="bold">“</text>
                                 </svg>
-                            ))}
+                                <div className="flex">
+                                    {[...Array(fb.star)].map((_, i) => (
+                                        <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+                            <p className="text-base text-gray-700 mb-4">&quot;{fb.text}&quot;</p>
+                            <div className="flex items-center mt-2">
+                                <div className="w-10 h-10 bg-gray-300 rounded-full mr-2 relative overflow-hidden">
+                                    <Image src={fb.img} alt={fb.name} fill style={{ objectFit: "cover" }} />
+                                </div>
+                                <span className="font-bold">{fb.name}</span>
+                            </div>
                         </div>
-                    </div>
-                    <p className="text-sm text-gray-700 mb-4">
-                        &quot;Dịch vụ vệ sinh của SkyHome rất chuyên nghiệp.
-                        Nhân viên đến đúng giờ, làm việc tận tâm và chi tiết.
-                        Sau khi vệ sinh, không gian nhà tôi sạch sẽ, gọn gàng, tạo cảm giác vô cùng thoải mái.&quot;
-                    </p>
-                    <div className="flex items-center mt-2">
-                        <div className="w-8 h-8 bg-gray-300 rounded-full mr-2 relative overflow-hidden">
-                            <Image
-                                src="/about/review/customer3.png"
-                                alt="User Avatar"
-                                fill
-                                style={{ objectFit: "cover" }}
-                            />
-                        </div>
-                        <span className="font-bold text-sm">Xuân Hương</span>
-                    </div>
+                    ))}
                 </div>
-                {/* Card lớn giữa */}
-                <div className="bg-white rounded-t-3xl rounded-bl-2xl shadow-[6px_6px_6px_6px_rgba(0,0,0,0.1)] p-8 w-96 flex flex-col justify-between scale-110 z-10 mx-2">
-                    <div className="flex items-center mb-2">
-                        <svg className="w-10 h-10 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <text x="2" y="30" fontSize="32" fontWeight="bold">“</text>
-                        </svg>
-                        <div className="flex">
-                            {[...Array(5)].map((_, i) => (
-                                <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" />
-                                </svg>
-                            ))}
-                        </div>
-                    </div>
-                    <p className="text-base text-gray-700 mb-4">
-                        &quot;Công ty tôi đã sử dụng dịch vụ vệ sinh văn phòng định kỳ của SkyHome.
-                        Mọi quy trình đều bài bản, sạch sẽ từ bàn ghế đến các góc nhỏ.
-                        Nhân viên thân thiện và hỗ trợ nhiệt tình.&quot;
-                    </p>
-                    <div className="flex items-center mt-2">
-                        <div className="w-8 h-8 bg-gray-300 rounded-full mr-2 relative overflow-hidden">
-                            <Image
-                                src="/about/review/customer1.png"
-                                alt="User Avatar"
-                                fill
-                                style={{ objectFit: "cover" }}
-                            />
-                        </div>
-                        <span className="font-bold text-base">Phúc Tín</span>
-                    </div>
-                </div>
-                {/* Card nhỏ phải */}
-                <div className="bg-white rounded-t-3xl rounded-bl-2xl shadow-[6px_6px_6px_6px_rgba(0,0,0,0.1)] p-6 w-64 flex flex-col justify-between mx-2">
-                    <div className="flex items-center mb-2">
-                        <svg className="w-8 h-8 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                            <text x="2" y="20" fontSize="20" fontWeight="bold">“</text>
-                        </svg>
-                        <div className="flex">
-                            {[...Array(5)].map((_, i) => (
-                                <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.38-2.455a1 1 0 00-1.175 0l-3.38 2.455c-.784.57-1.838-.197-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.393c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.966z" />
-                                </svg>
-                            ))}
-                        </div>
-                    </div>
-                    <p className="text-sm text-gray-700 mb-4">
-                        &quot;Tôi chọn gói tổng vệ sinh toàn diện của SkyHome và rất hài lòng.
-                        Ngôi nhà sáng sủa, không khí trong lành hơn hẳn.
-                        Thật sự mang lại cảm giác an tâm cho cả gia đình.&quot;
-                    </p>
-                    <div className="flex items-center mt-2">
-                        <div className="w-8 h-8 bg-gray-300 rounded-full mr-2 relative overflow-hidden">
-                            <Image
-                                src="/about/review/customer2.png"
-                                alt="User Avatar"
-                                fill
-                                style={{ objectFit: "cover" }}
-                            />
-                        </div>
-                        <span className="font-bold text-sm">Quỳnh Trang</span>
-                    </div>
-                </div>
+
+                {/* Nút phải */}
+                <button
+                    onClick={next}
+                    className="absolute right-10 top-1/2 -translate-y-1/2 bg-sky-900 text-white px-4 py-2 rounded-full shadow-md z-20"
+                >
+                    ▶
+                </button>
             </div>
         </section>
     );
