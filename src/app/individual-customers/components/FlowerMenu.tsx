@@ -103,7 +103,7 @@ const MenuItem = ({
         >
             <Link
                 href={item.href}
-                target="_blank"
+                // target="_blank"
                 rel="noopener noreferrer"
                 className={`flex h-full w-full items-center justify-center rounded-full transition-all duration-100 ${isOpen ? "pointer-events-auto" : "pointer-events-none"
                     } group hover:scale-125 hover:opacity-100`}

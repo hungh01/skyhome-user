@@ -4,24 +4,24 @@ import Image from "next/image";
 import FlowerMenu from "./FlowerMenu";
 
 const DichVuKhacIcon = () => (
-    <Image src="/service/dichvukhac.png" alt="Dich vu khac" width={500} height={500} />
+    <Image src="/individual-service/dichvukhac.png" alt="Dich vu khac" width={500} height={500} />
 );
 const MayGiatIcon = () => (
-    <Image src="/service/vsmaygiat.png" alt="May giat" width={500} height={500} />
+    <Image src="/individual-service/vsmaygiat.png" alt="May giat" width={500} height={500} />
 );
 
 const MayLanhIcon = () => (
-    <Image src="/service/vsmaylanh.png" alt="May lanh" width={500} height={500} />
+    <Image src="/individual-service/vsmaylanh.png" alt="May lanh" width={500} height={500} />
 );
 const MayNongLanhIcon = () => (
-    <Image src="/service/vsmaynonglanh.png" alt="May nong lanh" width={500} height={500} />
+    <Image src="/individual-service/vsmaynonglanh.png" alt="May nong lanh" width={500} height={500} />
 );
 
 const TongVeSinhIcon = () => (
-    <Image src="/service/tongvs.png" alt="Tong ve sinh" width={500} height={500} />
+    <Image src="/individual-service/tongvs.png" alt="Tong ve sinh" width={500} height={500} />
 );
 const VeSinhTheoGioIcon = () => (
-    <Image src="/service/vstheogio.png" alt="Ve sinh theo gio" width={500} height={500} />
+    <Image src="/individual-service/vstheogio.png" alt="Ve sinh theo gio" width={500} height={500} />
 );
 
 export default function ServiceSection() {
@@ -35,27 +35,27 @@ export default function ServiceSection() {
                     iconColor=""
                     menuItems={[
                         {
-                            href: 'https://github.com/',
+                            href: '/individual-customers/washing-machine-cleaning',
                             icon: MayGiatIcon,
                         },
                         {
-                            href: 'https://github.com/',
+                            href: '/individual-customers/others',
                             icon: DichVuKhacIcon,
                         },
                         {
-                            href: 'https://twitter.com/',
+                            href: '/individual-customers/air-conditioning-cleaning',
                             icon: MayLanhIcon,
                         },
                         {
-                            href: 'https://instagram.com/',
+                            href: '/individual-customers/water-heater-cleaning',
                             icon: MayNongLanhIcon,
                         },
                         {
-                            href: 'https://www.youtube.com/',
+                            href: '/individual-customers/hourly-cleaning',
                             icon: VeSinhTheoGioIcon,
                         },
                         {
-                            href: 'https://www.linkedin.com/',
+                            href: '/individual-customers/total-cleaning',
                             icon: TongVeSinhIcon,
                         },
 
