@@ -4,6 +4,8 @@ import ImpressiveService from "./components/impessive-service";
 import { useEffect } from "react";
 import { initParallaxBg } from "../animations/parallax-bg";
 import Image from "next/image";
+import RightImage from "@/components/split-2-side/right-image";
+import NavigationButton from "@/components/button/navigation-button";
 
 
 export default function BusinessCustomers() {
@@ -27,16 +29,40 @@ export default function BusinessCustomers() {
                 />
             </div>
             <div className="content min-h-screen z-10">
-                <MainSection
-                    title1="Dịch vụ"
-                    title2="Tiện ích"
-                    description="Dịch vụ dọn dẹp theo giờ của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
-                    buttonText="Giá trị mang lại"
-                    buttonLink="/individual-customers/hourly-cleaning/service-form"
-                    imageSrc="/footer/employee.webp"
+                <RightImage
+                    content={
+                        <>
+                            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-sky-900 leading-tight mb-6">
+                                {"Dịch vụ"}
+                                <br />
+                                <p className="text-2xl sm:text-4xl lg:text-[55px]">
+                                    {"Tiện ích"}
+                                </p>
+                            </h1>
+                            <p className="text-base sm:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
+                                {"Dịch vụ dọn dẹp theo giờ của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."}
+                            </p>
+                            <NavigationButton text={"Giá trị mang lại"} href={"/individual-customers/hourly-cleaning/service-form"} textsize="text-xl" />
+                        </>
+                    }
+                    image={
+                        <div className="w-full h-full flex justify-center items-center">
+                            <Image
+                                src={"/footer/employee.webp"}
+                                alt="Culture Personality Image"
+                                width={484}
+                                height={484}
+                                className="w-full h-full object-contain z-30"
+                            />
+                        </div>
+                    }
                 />
                 <ImpressiveService />
             </div>
         </>
     )
 }
+
+
+
+
