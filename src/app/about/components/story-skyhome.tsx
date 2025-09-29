@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-    "/about/collaborators/CT1.webp",
-    "/home-page/employee.webp",
+    "/about/stories/story1.webp",
+    "/about/stories/story2.webp",
 ];
 
 export default function StorySkyhome() {
@@ -24,7 +24,7 @@ export default function StorySkyhome() {
             id="section2"
             className="w-full min-h-screen flex flex-col items-center justify-center text-center px-4 py-8"
         >
-            <div className="container w-full max-w-6xl mx-auto flex flex-col items-center justify-center pt-8">
+            <div className="container w-full h-full max-w-6xl mx-auto flex flex-col items-center justify-center pt-8">
                 <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8">
                     {/* Left Side */}
                     <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-0 sm:px-4 mb-8 lg:mb-0">
