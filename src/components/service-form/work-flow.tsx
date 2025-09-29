@@ -1,15 +1,17 @@
+import { WorkingStep } from "@/interfaces/services/working-step.interface";
 import Image from "next/image";
 import { Fragment } from "react";
 
 interface WhyChooseProps {
-    items: Array<{ title: string; description: string; image: string }>;
+    items: WorkingStep[];
+    title?: string;
 }
 
-export default function WorkFlow({ items }: WhyChooseProps) {
+export default function WorkFlow({ items, title }: WhyChooseProps) {
     return (
         <section className="w-full py-10 bg-white">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-sky-900">
-                Quy trình dịch vụ SkyHome
+                {title || "Quy trình dịch vụ SkyHome"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full md:w-[72%] mx-auto">
                 {items.map((item, idx) =>

@@ -18,7 +18,7 @@ export default function AboutPage() {
                         src="/about/trongdongcomap.png"
                         alt="Background"
                         fill
-                        style={{ objectFit: "cover" }}
+                        style={{ objectFit: "fill" }}
                         priority
                     />
                 </div>

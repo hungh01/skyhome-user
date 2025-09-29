@@ -19,7 +19,7 @@ export default function MainSection() {
                     preload="auto"
                     className="absolute inset-0 w-full h-full object-cover z-11"
                 >
-                    <source src="/about/banner-home.webm" type="video/webm" />
+                    <source src="/about/clip_cty.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>)
             }

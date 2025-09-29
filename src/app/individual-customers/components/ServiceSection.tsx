@@ -26,8 +26,19 @@ const VeSinhTheoGioIcon = () => (
 
 export default function ServiceSection() {
     return (
-        <section className=" mt-5 mb-5 w-full snap-start h-screen">
+        <section
+            className="mt-5 mb-5 w-full snap-start h-screen flex justify-center items-center"
 
+        >
+
+            <div style={{
+                backgroundImage: "url('/individual-service/bg/round.webp')",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+            }} className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px] opacity-60 -z-10">
+
+            </div>
             <div className="flex justify-center items-center h-full">
                 <FlowerMenu
                     animationDuration={2000}
@@ -58,7 +69,6 @@ export default function ServiceSection() {
                             href: '/individual-customers/total-cleaning',
                             icon: TongVeSinhIcon,
                         },
-
                     ]}
                     togglerSize={100}
                 />

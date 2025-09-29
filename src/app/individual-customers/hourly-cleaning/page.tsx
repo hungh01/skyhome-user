@@ -3,22 +3,15 @@ import ServiceProtected from "@/components/service-form/service-protected";
 import UserManual from "@/components/service-form/user-manual";
 import WhyChoose from "@/components/service-form/why-choose";
 import WorkFlow from "@/components/service-form/work-flow";
+import { BookingStep } from "@/interfaces/services/booking-step.interface";
+import { CustomerCareService } from "@/interfaces/services/customer-care.interface";
+import { WorkingStep } from "@/interfaces/services/working-step.interface";
 
-interface step {
-    title: string;
-    description: string;
-    imageSrc: string;
-}
 
-interface Feature {
-    title: string;
-    description: string;
-    icon: string; // URL or path to the icon image
-}
 
 export default function HourlyCleaning() {
 
-    const steps: step[] = [
+    const steps: BookingStep[] = [
         {
             title: "Bước 1",
             description: "Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1",
@@ -46,7 +39,7 @@ export default function HourlyCleaning() {
         }
     ];
 
-    const features: Feature[] = [
+    const features: CustomerCareService[] = [
         {
             title: "Đội ngũ chuyên nghiệp",
             description: "Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. ",
@@ -70,7 +63,7 @@ export default function HourlyCleaning() {
         }
     ];
 
-    const workFlow: Array<{ title: string; description: string; image: string }> = [
+    const workFlow: WorkingStep[] = [
         {
             title: "Đặt dịch vụ",
             description: "Chọn gói dịch vụ và thời gian phù hợp với bạn.",
