@@ -1,6 +1,5 @@
 import { WorkingStep } from "@/interfaces/services/working-step.interface";
 import Image from "next/image";
-import { Fragment } from "react";
 
 interface WhyChooseProps {
     items: WorkingStep[];

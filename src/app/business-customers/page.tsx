@@ -1,11 +1,11 @@
 'use client';
-import MainSection from "@/components/service-form/main-section";
 import ImpressiveService from "./components/impessive-service";
 import { useEffect } from "react";
 import { initParallaxBg } from "../animations/parallax-bg";
 import Image from "next/image";
 import RightImage from "@/components/split-2-side/right-image";
 import NavigationButton from "@/components/button/navigation-button";
+import ContactForm from "./components/contact";
 
 
 export default function BusinessCustomers() {
@@ -48,16 +48,17 @@ export default function BusinessCustomers() {
                     image={
                         <div className="w-full h-full flex justify-center items-center">
                             <Image
-                                src={"/footer/employee.webp"}
+                                src={"/business-service/2employee.webp"}
                                 alt="Culture Personality Image"
-                                width={484}
-                                height={484}
+                                width={2080}
+                                height={1560}
                                 className="w-full h-full object-contain z-30"
                             />
                         </div>
                     }
                 />
                 <ImpressiveService />
+                <ContactForm />
             </div>
         </>
     )
