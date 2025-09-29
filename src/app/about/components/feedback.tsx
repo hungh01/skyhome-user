@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
+import { useViewportContext } from "@/providers/viewport-provider";
 
 const feedbacks = [
     { id: 1, name: "Xuân Hương", img: "/about/review/customer3.png", text: "Dịch vụ vệ sinh của SkyHome rất chuyên nghiệp. Nhân viên tận tâm, sạch sẽ, gọn gàng.", star: 5 },
@@ -14,6 +15,7 @@ const feedbacks = [
 ];
 
 export default function CustomersFeedback() {
+    const { isMobile } = useViewportContext();
     const [index, setIndex] = useState(0);
     const cardRefs = useRef<HTMLDivElement[]>([]);
 
@@ -63,28 +65,45 @@ export default function CustomersFeedback() {
     const next = () => setIndex((prev) => (prev + 1) % feedbacks.length);
 
     return (
-        <section className="w-[72%] py-16 mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-10 text-sky-900">
-                Feedback của khách hàng SkyHome
-            </h2>
+        <section className="w-[72%] h-screen py-16 mx-auto ">
+            <div className="h-1/3 bg-white rounded-3xl max-w-3xl mx-auto">
+                <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-center mb-10 text-sky-900">
+                    Đánh giá của khách hàng
+                </h2>
 
-            <div className="relative flex items-center justify-center">
+                <p className="text-base sm:text-lg lg:text-xl text-gray-700 text-center max-w-3xl mx-auto leading-relaxed opacity-90">
+                    “Mỗi ý kiến, mỗi chia sẻ từ khách hàng đều là nguồn động lực lớn giúp Skyhome không ngừng hoàn thiện và phát triển.
+                    Chúng tôi tin rằng, sự hài lòng và trải nghiệm thực tế của khách hàng chính là thước đo rõ ràng nhất cho chất lượng dịch vụ và sản phẩm.
+                    Skyhome luôn trân trọng lắng nghe từng phản hồi để mang đến không gian sống tiện nghi, ấm áp và phù hợp nhất.
+                    Cảm ơn khách hàng đã đồng hành và chia sẻ chân thành để Skyhome ngày càng tốt hơn.”
+                </p>
+            </div>
+
+            <div className="relative h-2/3 flex items-center justify-center">
                 {/* Nút trái */}
-                <button
-                    onClick={prev}
-                    className="absolute left-10 top-1/2 -translate-y-1/2 bg-sky-900 text-white px-4 py-2 rounded-full shadow-md z-20"
-                >
-                    ◀
-                </button>
+                {isMobile && (
+                    <button
+                        onClick={prev}
+                        className="absolute -left-5 top-1/2 -translate-y-1/2 bg-sky-200 text-black px-4 py-2 rounded-full shadow-md z-20"
+                    >
+                        ◀
+                    </button>
+                )}
 
-                <div className="relative w-full h-[360px] flex justify-center items-center overflow-hidden">
+                <div className="relative w-full h-[50vh] flex justify-center items-center overflow-hidden">
                     {feedbacks.map((fb, i) => (
                         <div
                             key={fb.id}
                             ref={(el) => {
                                 if (el) cardRefs.current[i] = el;
                             }}
-                            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-t-3xl rounded-bl-2xl shadow-[6px_6px_10px_10px_rgba(0,0,0,0.1)] p-6 w-80 min-h-72 flex flex-col justify-between"
+                            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-t-3xl rounded-bl-2xl shadow-[6px_6px_10px_10px_rgba(0,0,0,0.1)] p-6 w-60 sm:w-80 h-auto min-h-72 flex flex-col justify-between"
+                            onClick={() => {
+                                // Tính offset của card này so với index trung tâm
+                                const offset = (i - index + feedbacks.length) % feedbacks.length;
+                                if (offset === feedbacks.length - 1) prev();
+                                if (offset === 1) next();
+                            }}
                         >
                             <div className="flex items-center mb-2">
                                 <svg className="w-8 h-8 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -110,12 +129,14 @@ export default function CustomersFeedback() {
                 </div>
 
                 {/* Nút phải */}
-                <button
-                    onClick={next}
-                    className="absolute right-10 top-1/2 -translate-y-1/2 bg-sky-900 text-white px-4 py-2 rounded-full shadow-md z-20"
-                >
-                    ▶
-                </button>
+                {isMobile && (
+                    <button
+                        onClick={next}
+                        className="absolute -right-5 top-1/2 -translate-y-1/2 bg-sky-200 text-black px-4 py-2 rounded-full shadow-md z-20"
+                    >
+                        ▶
+                    </button>
+                )}
             </div>
         </section>
     );

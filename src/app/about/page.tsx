@@ -6,6 +6,8 @@ import SkyhomeCustomers from "./components/skyhome-customers";
 import StorySkyhome from "./components/story-skyhome";
 
 export default function AboutPage() {
+
+
     return (
         <>
             <MainSection />
@@ -18,7 +20,7 @@ export default function AboutPage() {
                         src="/about/trongdongcomap.png"
                         alt="Background"
                         fill
-                        style={{ objectFit: "fill" }}
+                        style={{ objectFit: "contain" }}
                         priority
                     />
                 </div>

@@ -7,7 +7,7 @@ import { useViewportContext } from "@/providers/viewport-provider";
 export function Footer() {
     const { isMobile } = useViewportContext();
     return (
-        <footer className="bg-white snap-start h-screen w-full flex flex-col">
+        <footer className="bg-white snap-start h-screen w-full flex flex-col z-10">
             <div className="h-1/2 bg-gradient-to-r text-sky-900 mt-16 flex items-end">
                 <div className={`flex w-full ${isMobile ? "" : "h-[80%]"} mx-auto max-w-screen px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#FDDB00] via-[rgb(244,226,110)] to-[#FDDB00]`}>
 

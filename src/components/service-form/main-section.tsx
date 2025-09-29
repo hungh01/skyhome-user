@@ -21,10 +21,10 @@ export default function MainSection({ title1, title2, description, buttonText, b
             <RightImage
                 content={
                     <>
-                        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-sky-900 leading-tight mb-6">
+                        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-sky-900 leading-tight mb-6">
                             {title1}
                             <br />
-                            <p className="text-2xl sm:text-4xl lg:text-5xl">
+                            <p className="text-2xl sm:text-4xl lg:text-[55px]">
                                 {title2}
                             </p>
                         </h1>
@@ -35,13 +35,17 @@ export default function MainSection({ title1, title2, description, buttonText, b
                     </>
                 }
                 image={
-                    <Image
-                        src={imageSrc}
-                        alt="Culture Personality Image"
-                        width={384}
-                        height={384}
-                        className="w-full h-full object-contain z-30"
-                    />
+                    <div className="w-[60vh] h-[60vh] flex justify-center items-center rounded-full shadow-lg ">
+                        <div className="absolute w-[60vh] h-[60vh] flex justify-center items-center rounded-full bg-[#aad6f2] opacity-20"
+                        />
+                        <Image
+                            src={imageSrc}
+                            alt="Culture Personality Image"
+                            width={484}
+                            height={484}
+                            className="w-[80%] h-[100%] object-contain z-30"
+                        />
+                    </div>
                 }
             />
         </>

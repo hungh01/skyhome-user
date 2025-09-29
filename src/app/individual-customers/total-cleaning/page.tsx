@@ -1,3 +1,5 @@
+'use client';
+import { initParallaxBg } from "@/app/animations/parallax-bg";
 import MainSection from "@/components/service-form/main-section";
 import ServiceProtected from "@/components/service-form/service-protected";
 import UserManual from "@/components/service-form/user-manual";
@@ -6,6 +8,8 @@ import WorkFlow from "@/components/service-form/work-flow";
 import { BookingStep } from "@/interfaces/services/booking-step.interface";
 import { CustomerCareService } from "@/interfaces/services/customer-care.interface";
 import { WorkingStep } from "@/interfaces/services/working-step.interface";
+import Image from "next/image";
+import { useEffect } from "react";
 
 
 
@@ -86,25 +90,43 @@ const workFlow: WorkingStep[] = [
 
 
 export default function TotalMachineCleaning() {
+    useEffect(() => {
+        const anim = initParallaxBg("#bgImage", ".content");
+        return () => {
+            anim.kill(); // cleanup khi unmount
+        };
+    }, []);
     return (
-        <div className="min-h-screen">
-            <MainSection
-                title1="Dịch vụ"
-                title2="Tổng vệ sinh"
-                description="Dịch vụ tổng vệ sinh của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
-                buttonText="Đặt dịch vụ ngay"
-                buttonLink="/individual-customers/air-conditioning-cleaning/service-form"
-                imageSrc="/individual-service/tongvs.png"
-            />
-            <ServiceProtected
-                title="An tâm với dịch vụ"
-                description="Tại SkyHome, chúng tôi luôn đặt sự an tâm và hài lòng của khách hàng lên hàng đầu. Mỗi dịch vụ vệ sinh không chỉ dừng lại ở việc làm sạch, mà còn là cam kết về chất lượng, uy tín và sự chuyên nghiệp. Chúng tôi hiểu rằng mỗi gia đình, mỗi doanh nghiệp đều có nhu cầu và tiêu chuẩn riêng, vì thế SkyHome luôn lắng nghe và đưa ra giải pháp phù hợp, từ vệ sinh nhà ở, văn phòng, cho đến dịch vụ định kỳ và tổng vệ sinh toàn diện. 
+        <>
+            <div className="fixed inset-0 -z-10">
+                <Image
+                    id="bgImage"
+                    src="/home-page/sky.webp"
+                    alt="Background"
+                    fill
+                    style={{ objectFit: "cover" }}
+                    priority
+                />
+            </div>
+            <div className="min-h-screen">
+                <MainSection
+                    title1="Dịch vụ"
+                    title2="Tổng vệ sinh"
+                    description="Dịch vụ tổng vệ sinh của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
+                    buttonText="Đặt dịch vụ ngay"
+                    buttonLink="/individual-customers/air-conditioning-cleaning/service-form"
+                    imageSrc="/individual-service/icon-services/tongvs.webp"
+                />
+                <ServiceProtected
+                    title="An tâm với dịch vụ"
+                    description="Tại SkyHome, chúng tôi luôn đặt sự an tâm và hài lòng của khách hàng lên hàng đầu. Mỗi dịch vụ vệ sinh không chỉ dừng lại ở việc làm sạch, mà còn là cam kết về chất lượng, uy tín và sự chuyên nghiệp. Chúng tôi hiểu rằng mỗi gia đình, mỗi doanh nghiệp đều có nhu cầu và tiêu chuẩn riêng, vì thế SkyHome luôn lắng nghe và đưa ra giải pháp phù hợp, từ vệ sinh nhà ở, văn phòng, cho đến dịch vụ định kỳ và tổng vệ sinh toàn diện. 
                 Với đội ngũ nhân viên được đào tạo bài bản, tác phong chuyên nghiệp, SkyHome cam kết mang đến sự chỉn chu trong từng chi tiết, từ những góc nhỏ khó thấy đến toàn bộ không gian. Tất cả đều hướng đến mục tiêu tạo ra một môi trường sạch sẽ, gọn gàng, an toàn và trong lành, giúp khách hàng tận hưởng sự thoải mái tuyệt đối.
                 Lựa chọn SkyHome, bạn không chỉ nhận được một dịch vụ vệ sinh đơn thuần, mà còn là sự đồng hành đáng tin cậy trong việc kiến tạo và gìn giữ không gian sống, không gian làm việc chuẩn mực. SkyHome – sạch sẽ để bạn luôn an tâm." />
-            {/* Ensure these components do not cause state updates during render */}
-            <UserManual serviceName={'Vệ sinh máy lạnh'} steps={steps} />
-            <WhyChoose items={features} />
-            <WorkFlow items={workFlow} />
-        </div>
+                {/* Ensure these components do not cause state updates during render */}
+                <UserManual serviceName={'Vệ sinh máy lạnh'} steps={steps} />
+                <WhyChoose items={features} />
+                <WorkFlow items={workFlow} />
+            </div>
+        </>
     );
 }

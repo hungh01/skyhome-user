@@ -13,7 +13,7 @@ interface WhyChooseProps {
 
 export default function WhyChoose({ items }: WhyChooseProps) {
     return (
-        <section className="w-full py-16 bg-white">
+        <section className="w-full py-16 ">
             <h2 className="text-3xl font-bold text-center mb-10 text-sky-900">Tại sao nên sử dụng SkyHome</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-[72%] mx-auto">
                 {items.map((item, i) => (
