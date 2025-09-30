@@ -119,7 +119,8 @@ export default function HourlyCleaning() {
             <div className="content min-h-screen">
                 <MainSection
                     title1="Dịch vụ"
-                    title2="Vệ sinh theo giờ"
+                    title2="Vệ sinh"
+                    title3="theo giờ"
                     description="Giải pháp linh hoạt, dọn dẹp nhà cửa theo nhu cầu và thời gian bạn chọn."
                     buttonText="Đặt dịch vụ ngay"
                     buttonLink="/individual-customers/hourly-cleaning/service-form"

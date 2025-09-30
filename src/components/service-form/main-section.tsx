@@ -7,13 +7,14 @@ import RightImage from "../split-2-side/right-image";
 interface MainSectionProps {
     title1: string;
     title2: string;
+    title3?: string;
     description: string;
     buttonText: string;
     buttonLink: string;
     imageSrc: string;
 }
 
-export default function MainSection({ title1, title2, description, buttonText, buttonLink, imageSrc }: MainSectionProps) {
+export default function MainSection({ title1, title2, title3, description, buttonText, buttonLink, imageSrc }: MainSectionProps) {
 
 
     return (
@@ -27,6 +28,10 @@ export default function MainSection({ title1, title2, description, buttonText, b
                             <p className="text-2xl sm:text-8xl lg:text-8xl">
                                 {title2}
                             </p>
+                            {title3 && <p className="text-2xl sm:text-8xl lg:text-8xl">
+                                {title3}
+                            </p>
+                            }
                         </h1>
                         <p className="text-base sm:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
                             {description}

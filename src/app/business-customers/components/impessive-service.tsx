@@ -9,35 +9,35 @@ const items = [
         title: "Hệ thống quản lý tích hợp",
         content:
             "SkyHome sử dụng hệ thống quản lý tích hợp giúp đồng bộ hóa mọi quy trình vận hành, từ tiếp nhận yêu cầu khách hàng, phân công công việc cho nhân viên đến kiểm soát chất lượng dịch vụ. Nhờ đó, mọi thông tin đều được cập nhật theo thời gian thực, giảm thiểu sai sót và nâng cao hiệu quả quản lý. ",
-        image: "/about/review/customer1.png",
+        image: "/business-service/icons/quanly.webp",
     },
     {
         id: 2,
         title: "Chất lượng đào tạo",
         content:
             "Đội ngũ nhân viên SkyHome được đào tạo bài bản, thường xuyên cập nhật kiến thức và kỹ năng mới nhất trong lĩnh vực vệ sinh công nghiệp. Chúng tôi xây dựng chương trình đào tạo chuyên sâu, kết hợp giữa lý thuyết và thực hành, giúp nhân viên xử lý linh hoạt mọi tình huống thực tế.",
-        image: "/about/review/customer1.png",
+        image: "/business-service/icons/daotao.webp",
     },
     {
         id: 3,
         title: "Công nghệ hiện đại",
         content:
             "SkyHome ứng dụng các công nghệ tiên tiến trong quản lý và vận hành dịch vụ, như phần mềm quản lý thông minh, hệ thống báo cáo tự động và các thiết bị hỗ trợ làm sạch hiện đại. ",
-        image: "/about/review/customer1.png",
+        image: "/business-service/icons/congnghe.webp",
     },
     {
         id: 4,
         title: "Hóa chất tiêu chuẩn",
         content:
             "Chúng tôi sử dụng hóa chất đạt chuẩn an toàn, thân thiện với môi trường và được kiểm định bởi các cơ quan chức năng. SkyHome cam kết không sử dụng các loại hóa chất độc hại, gây ảnh hưởng đến sức khỏe người dùng và môi trường xung quanh.",
-        image: "/about/review/customer1.png",
+        image: "/business-service/icons/hoachat.webp",
     },
     {
         id: 5,
         title: "Thiết bị hiện đại",
         content:
             "SkyHome đầu tư vào các thiết bị làm sạch hiện đại, giúp nâng cao hiệu quả làm việc và tiết kiệm thời gian cho khách hàng. Các thiết bị như máy hút bụi công nghiệp, máy chà sàn, máy phun rửa áp lực cao... đều được nhập khẩu từ các thương hiệu uy tín, đảm bảo độ bền và hiệu suất vượt trội.",
-        image: "/about/review/customer1.png",
+        image: "/business-service/icons/thietbi.webp",
     },
 ];
 
@@ -121,7 +121,7 @@ export default function ImpressiveService() {
                         <h3 className="font-bold text-3xl text-sky-900 z-10">{item.title}</h3>
 
                         {/* Content */}
-                        <div className="absolute inset-0 top-15 left-0 right-0 px-4 overflow-visible">
+                        <div className="absolute inset-0 top-20 left-0 right-0 px-4 overflow-visible">
                             {/* Image */}
                             <div
                                 ref={(el) => {
