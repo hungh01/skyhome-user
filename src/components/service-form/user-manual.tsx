@@ -18,15 +18,15 @@ export default function UserManual({ serviceName, steps }: UserManualProps) {
     const [currentStep, setCurrentStep] = useState(0);
 
     return (
-        <section className="w-full max-w-6xl min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 mx-auto py-8">
+        <section className="w-[74%] min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 mx-auto py-8">
             {/* Right: mockup điện thoại */}
-            <div className="flex w-full lg:w-2/5 justify-center items-center mb-8 lg:mb-0">
-                <div className="w-[260px] sm:w-[320px] h-[480px] sm:h-[600px] rounded-3xl flex items-center justify-center bg-[url('/individual-service/phone-background.webp')] bg-cover bg-center text-center">
+            <div className="flex w-full lg:w-2/5 justify-start items-end mb-8 lg:mb-0">
+                <div className="w-[260px] sm:w-[340px] h-[480px] sm:h-full rounded-3xl flex items-center justify-center ">
                     <Image
                         src={steps[currentStep].imageSrc}
                         alt={`Step ${currentStep + 1}`}
-                        width={260}
-                        height={480}
+                        width={2060}
+                        height={1180}
                         className="rounded-3xl object-cover"
                     // style={{ width: '100%', height: 'auto' }}
                     />
@@ -34,8 +34,11 @@ export default function UserManual({ serviceName, steps }: UserManualProps) {
             </div>
             {/* Left: hướng dẫn các bước */}
             <div className="w-full lg:w-3/5 flex flex-col justify-center items-start">
-                <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-sky-900 text-center lg:text-left">
-                    Hướng dẫn sử dụng dịch vụ <br /> {serviceName}
+                <h2 className="text-2xl lg:text-5xl font-bold mb-6 text-sky-900 text-center lg:text-left">
+                    Hướng dẫn sử dụng dịch vụ
+                    <br />
+
+                    <p className="pt-2 text-4xl lg:text-7xl">{serviceName}</p>
                 </h2>
                 <ol className="space-y-4 w-full">
                     {steps.map((step, index) => (
@@ -44,8 +47,8 @@ export default function UserManual({ serviceName, steps }: UserManualProps) {
                             className={`rounded-lg px-4 py-2 cursor-pointer transition-colors duration-200 ${currentStep === index ? 'bg-gradient-to-r from-sky-700 to-transparent text-white' : 'bg-gradient-to-r from-yellow-200 to-transparent text-sky-900'}`}
                             onClick={() => setCurrentStep(index)}
                         >
-                            <span className="font-bold text-lg">{index + 1}. {step.title}</span>
-                            <p className={`text-base ${currentStep === index ? 'text-gray-200' : 'text-gray-800'}`}>{step.description}</p>
+                            <span className="font-bold text-2xl">{index + 1}. {step.title}</span>
+                            <p className={`text-xl ${currentStep === index ? 'text-gray-200' : 'text-gray-800'}`}>{step.description}</p>
                         </li>
                     ))}
                 </ol>

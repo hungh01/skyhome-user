@@ -1,5 +1,6 @@
 'use client';
 import { initParallaxBg } from "@/app/animations/parallax-bg";
+import MainSection from "@/components/service-form/main-section";
 import WorkFlow from "@/components/service-form/work-flow";
 import { WorkingStep } from "@/interfaces/services/working-step.interface";
 import Image from "next/image";
@@ -55,16 +56,15 @@ export default function Others() {
                 />
             </div>
             <div className="content min-h-screen">
-                <section className="w-full h-screen flex flex-col justify-center items-center text-center">
-                    <Image
-                        src="/home-page/employee-banner.webp"
-                        alt="employee banner"
-                        width={2080}
-                        height={1040}
-                        className="w-[76%] h-auto "
-                    />
-                </section>
-                <WorkFlow title="Các dịch vụ khác của SkyHome" items={workFlow} />
+                <MainSection
+                    title1="Dịch vụ"
+                    title2="Khác"
+                    description="Dịch vụ tổng vệ sinh của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
+                    buttonText="Đặt dịch vụ ngay"
+                    buttonLink="/individual-customers/booking"
+                    imageSrc="/individual-service/dichvukhac.png"
+                />
+                <WorkFlow items={workFlow} />
             </div>
         </>
     );

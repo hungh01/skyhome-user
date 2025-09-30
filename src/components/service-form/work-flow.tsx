@@ -9,7 +9,7 @@ interface WhyChooseProps {
 export default function WorkFlow({ items, title }: WhyChooseProps) {
     return (
         <section className="w-full py-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-10 text-sky-900">
+            <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 md:mb-10 text-sky-900">
                 {title || "Quy trình dịch vụ SkyHome"}
             </h2>
             <div className="flex flex-col gap-8 w-full md:w-[72%] mx-auto">

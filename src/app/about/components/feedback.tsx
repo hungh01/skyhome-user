@@ -65,21 +65,18 @@ export default function CustomersFeedback() {
     const next = () => setIndex((prev) => (prev + 1) % feedbacks.length);
 
     return (
-        <section className="w-[72%] h-screen py-16 mx-auto ">
-            <div className="h-1/3 bg-white rounded-3xl max-w-3xl mx-auto">
+        <section className="w-[72%] h-screen py-40 mx-auto ">
+            <div className="h-1/3  rounded-3xl max-w-3xl mx-auto">
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-center mb-10 text-sky-900">
                     Đánh giá của khách hàng
                 </h2>
 
                 <p className="text-base sm:text-lg lg:text-xl text-gray-700 text-center max-w-3xl mx-auto leading-relaxed opacity-90">
-                    “Mỗi ý kiến, mỗi chia sẻ từ khách hàng đều là nguồn động lực lớn giúp Skyhome không ngừng hoàn thiện và phát triển.
-                    Chúng tôi tin rằng, sự hài lòng và trải nghiệm thực tế của khách hàng chính là thước đo rõ ràng nhất cho chất lượng dịch vụ và sản phẩm.
-                    Skyhome luôn trân trọng lắng nghe từng phản hồi để mang đến không gian sống tiện nghi, ấm áp và phù hợp nhất.
-                    Cảm ơn khách hàng đã đồng hành và chia sẻ chân thành để Skyhome ngày càng tốt hơn.”
+                    Ý kiến và phản hồi của khách hàng là động lực để SkyHome không ngừng hoàn thiện dịch vụ. Sự hài lòng trong từng trải nghiệm chính là minh chứng rõ ràng cho chất lượng dịch vụ vệ sinh chuyên nghiệp mà chúng tôi mang đến.
                 </p>
             </div>
 
-            <div className="relative h-2/3 flex items-center justify-center pt-20">
+            <div className="relative h-2/3 flex items-center justify-center">
                 {/* Nút trái */}
                 {isMobile && (
                     <button

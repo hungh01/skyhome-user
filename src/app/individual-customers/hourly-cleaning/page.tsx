@@ -15,29 +15,34 @@ import { useEffect } from "react";
 
 const steps: BookingStep[] = [
     {
-        title: "Bước 1",
-        description: "Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1",
-        imageSrc: "/about/review/customer5.jpg"
+        title: "Chọn dịch vụ",
+        description: "Nhấn vào biểu tượng Vệ sinh theo giờ.",
+        imageSrc: "/individual-service/steps/theogio/1.webp"
     },
     {
-        title: "Bước 2",
-        description: "Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2",
-        imageSrc: "/about/review/customer1.png"
+        title: "Tùy chọn dịch vụ",
+        description: "Chọn gói dịch vụ, mục cần làm và dụng cụ sử dụng.",
+        imageSrc: "/individual-service/steps/theogio/2.webp"
     },
     {
-        title: "Bước 3",
-        description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
-        imageSrc: "/about/review/customer5.jpg"
+        title: "Chọn thời gian",
+        description: "Chọn ngày, giờ và ghi chú cho dịch vụ.",
+        imageSrc: "/individual-service/steps/theogio/3.webp"
     },
     {
-        title: "Bước 4",
-        description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
-        imageSrc: "/about/review/customer6.jpg"
+        title: "Xác nhận thông tin",
+        description: "Kiểm tra địa chỉ, thời gian và công việc.",
+        imageSrc: "/individual-service/steps/theogio/4.webp"
     },
     {
-        title: "Bước 5",
-        description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
-        imageSrc: "/about/review/customer5.jpg"
+        title: "Chọn voucher",
+        description: " Áp dụng ưu đãi phù hợp.",
+        imageSrc: "/individual-service/steps/theogio/5.webp"
+    },
+    {
+        title: "Thanh toán & đặt dịch vụ",
+        description: "Xác nhận chi phí, chọn phương thức thanh toán và hoàn tất đặt dịch vụ.",
+        imageSrc: "/individual-service/steps/theogio/6.webp"
     }
 ];
 

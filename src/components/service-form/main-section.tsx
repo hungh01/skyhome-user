@@ -21,10 +21,10 @@ export default function MainSection({ title1, title2, description, buttonText, b
             <RightImage
                 content={
                     <>
-                        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-sky-900 leading-tight mb-6">
+                        <h1 className="text-3xl sm:text-6xl lg:text-8xl font-bold text-sky-900 leading-tight mb-6">
                             {title1}
                             <br />
-                            <p className="text-2xl sm:text-4xl lg:text-[55px]">
+                            <p className="text-2xl sm:text-8xl lg:text-8xl">
                                 {title2}
                             </p>
                         </h1>
@@ -35,8 +35,8 @@ export default function MainSection({ title1, title2, description, buttonText, b
                     </>
                 }
                 image={
-                    <div className="w-[60vh] h-[60vh] flex justify-center items-center rounded-full shadow-lg ">
-                        <div className="absolute w-[60vh] h-[60vh] flex justify-center items-center rounded-full bg-[#aad6f2] opacity-20"
+                    <div className="w-[60vh] h-[60vh] flex justify-center items-center rounded-full">
+                        <div className="absolute w-[60vh] h-[60vh] flex justify-center items-center bg-[url('/individual-service/icon-services/ellipse.webp')]  bg-cover bg-center rounded-full opacity-50"
                         />
                         <Image
                             src={imageSrc}

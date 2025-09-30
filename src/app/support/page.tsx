@@ -13,7 +13,7 @@ export default function BusinessCustomers() {
             </section>
 
             <ServiceProtected
-                title="Dịch vụ dành cho doanh nghiệp"
+                title="Điều khoản và chính sách bảo mật của khách hàng"
                 description="SkyHome cung cấp các dịch vụ vệ sinh chuyên nghiệp dành cho các doanh nghiệp, giúp duy trì môi trường làm việc sạch sẽ và an toàn."
             />
 

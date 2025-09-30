@@ -14,7 +14,7 @@ export default function AboutPage() {
             <StorySkyhome />
             <SkyhomeCustomers />
             <div className="relative">
-                <div className="absolute inset-0 -z-10 opacity-20">
+                <div className="absolute inset-0 -z-10 opacity-10">
                     <Image
                         id="bgImage"
                         src="/about/trongdongcomap.png"

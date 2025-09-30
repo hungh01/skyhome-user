@@ -29,12 +29,12 @@ export default function MainSection() {
                 <div className="flex flex-col lg:flex-row items-center justify-between h-full px-4 pt-6 lg:py-0">
                     {/* Left Content */}
                     <div className="flex-1 max-w-2xl text-center lg:text-left mb-4 lg:mb-0 order-1 pt-14 lg:order-1">
-                        <h1 className={`text-2xl ${width < 1058 && width > 810 ? 'text-5xl' : ''} ${width < 850 ? 'text-3xl' : ''} ${width > 1058 ? 'text-6xl' : ''} font-bold text-sky-900 leading-tight mb-6`}>
+                        <h1 className={`text-2xl ${width < 1058 && width > 810 ? 'text-5xl' : ''} ${width < 850 ? 'text-3xl' : ''} ${width > 1058 ? 'text-8xl' : ''} font-bold text-sky-900 leading-tight mb-6`}>
                             Ứng dụng
                             <br />
-                            Tiện ích
+                            Tiện ích cho
                             <br />
-                            <span>Cho người Việt</span>
+                            <span>Người Việt</span>
                         </h1>
                         <p className="text-xs sm:text-lg text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
                             Luôn lắng nghe phản hồi, giải quyết vấn đề nhanh chóng <br /> và chuyên nghiệp để đảm bảo sự hài lòng tối đa

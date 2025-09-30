@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { SkyHomeFont1 } from "@/config/font/fonts";
 
 const images = [
     "/about/stories/story1.webp",
@@ -24,11 +25,11 @@ export default function StorySkyhome() {
             id="section2"
             className="w-full min-h-screen flex flex-col items-center justify-center text-center px-4 py-8"
         >
-            <div className="container w-full h-full max-w-6xl mx-auto flex flex-col items-center justify-center pt-8">
+            <div className="container w-[74%] h-full mx-auto flex flex-col items-center justify-center pt-8">
                 <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8">
                     {/* Left Side */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-center items-center px-0 sm:px-4 mb-8 lg:mb-0">
-                        <div className="w-full max-w-md mx-auto overflow-hidden rounded-xl relative aspect-[5/6]">
+                    <div className="w-full h-full lg:w-1/2 flex flex-col justify-center items-center px-0 sm:px-4 mb-8 lg:mb-0">
+                        <div className="w-full mx-auto overflow-hidden rounded-xl relative aspect-[5/6]">
                             <div
                                 className="flex transition-transform duration-700 ease-in-out h-full"
                                 style={{ transform: `translateX(-${current * 100}%)` }}
@@ -39,9 +40,6 @@ export default function StorySkyhome() {
                                             src={src}
                                             alt={`Slide ${idx + 1}`}
                                             fill
-                                            className="object-cover"
-                                            sizes="(max-width: 768px) 100vw, 500px"
-                                            priority={idx === 0}
                                         />
                                     </div>
                                 ))}
@@ -63,14 +61,20 @@ export default function StorySkyhome() {
                     {/* Right Side */}
                     <div className="w-full lg:w-1/2 flex justify-center items-center px-0 sm:px-4">
                         <div className="max-w-lg text-left lg:text-left">
-                            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 text-sky-900">
-                                Câu chuyện SkyHome
+                            <h2 className={` text-2xl sm:text-3xl lg:text-8xl font-bold  text-sky-900 ${SkyHomeFont1.className}`}>
+                                Câu chuyện
+                                <br />
+                            </h2>
+                            <h2 className={` text-2xl sm:text-3xl lg:text-7xl font-bold mb-4 text-sky-900`}>
+                                Skyhome
+                                <br />
                             </h2>
                             <p className="text-base sm:text-lg lg:text-xl text-sky-900">
-                                &quot;SkyHome ra đời từ mong muốn đồng hành cùng mỗi gia đình và doanh nghiệp trong hành trình chăm sóc không gian sống và làm việc.
-                                Chúng tôi tin rằng sự sạch sẽ không chỉ là bề ngoài mà còn là nền tảng cho sức khỏe, tinh thần và hiệu quả.
-                                Chính vì vậy, SkyHome không ngừng nỗ lực để mang đến dịch vụ vệ sinh đa dạng, chuyên nghiệp và thân thiện –
-                                để mỗi ngày của bạn trở nên nhẹ nhàng, trọn vẹn hơn.&quot;
+                                &quot;SkyHome ra đời từ mong muốn đồng hành cùng mỗi gia đình và doanh nghiệp trong việc chăm sóc không gian sống và không gian làm việc.
+                                Chúng tôi tin rằng sự sạch sẽ không chỉ là vẻ bề ngoài, mà còn là nền tảng quan trọng cho sức khỏe, tinh thần và hiệu quả công việc. Một ngôi nhà sạch sẽ, gọn gàng hay văn phòng trong lành sẽ mang lại cảm giác thoải mái, tạo nguồn năng lượng tích cực và giúp nâng cao chất lượng cuộc sống.
+                                Xuất phát từ niềm tin đó, SkyHome không ngừng nỗ lực phát triển dịch vụ vệ sinh đa dạng, bao gồm vệ sinh theo giờ, tổng vệ sinh toàn diện, vệ sinh máy lạnh, vệ sinh máy giặt và vệ sinh máy nước nóng lạnh. Mỗi dịch vụ đều được thực hiện theo quy trình chuyên nghiệp, chú trọng đến sự an toàn và trải nghiệm của khách hàng.
+                                SkyHome hướng đến việc mang lại giá trị thiết thực: giúp bạn tiết kiệm thời gian, tận hưởng môi trường sống sạch sẽ, an toàn và trong lành, để mỗi ngày đều nhẹ nhàng và trọn vẹn hơn.
+                                &quot;
                             </p>
                         </div>
                     </div>
