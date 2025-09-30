@@ -52,7 +52,7 @@ export default function ContactChannels() {
                 {channels.map((ch) => (
                     <Link key={ch.id} className="flex flex-col items-center text-center" href={ch.link}>
                         {/* Icon circle */}
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#FBBD00] flex items-center justify-center mb-3">
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#FDDB00] flex items-center justify-center mb-3">
                             {ch.icon}
                         </div>
                         <p className="font-bold text-sky-900 text-base sm:text-lg">{ch.title}</p>

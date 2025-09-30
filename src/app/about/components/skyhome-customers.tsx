@@ -19,6 +19,7 @@ export default function SkyhomeCustomers() {
                             sizes="(max-width: 768px) 100vw, 60vw"
                         />
                     </div>
+
                     <div className="w-full md:w-4/8 h-auto md:h-70 flex flex-col justify-center items-start mt-4 md:mt-0">
                         <h1 className="text-sky-900 text-2xl md:text-4xl font-bold mb-2">
                             Khách hàng cá nhân
@@ -31,16 +32,16 @@ export default function SkyhomeCustomers() {
                 </div>
                 {/* Business Customer */}
                 <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8">
-                    <div className="w-full md:w-5/8 h-60 md:h-90 bg-gray-200 flex items-center justify-center rounded-2xl relative">
+                    <div className="w-full md:w-4/8 h-60 md:h-70 bg-gray-200 flex items-center justify-center rounded-2xl relative">
                         <Image
                             src="/about/business-customer.webp"
-                            alt="Logo Khách hàng 4"
+                            alt="Logo Khách hàng 1"
                             fill
                             className="object-cover rounded-2xl"
                             sizes="(max-width: 768px) 100vw, 60vw"
                         />
                     </div>
-                    <div className="w-full md:w-3/8 h-auto md:h-90 flex flex-col justify-center items-end mt-4 md:mt-0">
+                    <div className="w-full md:w-4/8 h-auto md:h-70 flex flex-col justify-center items-end mt-4 md:mt-0">
                         <h1 className="text-sky-900 text-2xl md:text-4xl font-bold mb-2 text-right md:text-right">
                             Khách hàng doanh nghiệp
                         </h1>

@@ -17,32 +17,32 @@ const steps: BookingStep[] = [
     {
         title: "Chọn dịch vụ",
         description: "Nhấn vào biểu tượng vệ sinh máy lạnh",
-        imageSrc: "/individual-service/steps/tongvs/1.webp"
+        imageSrc: "/individual-service/steps/maylanh/1.webp"
     },
     {
         title: "Tùy chọn dịch vụ",
         description: "Chọn gói dịch vụ, mục cần làm và dụng cụ sử dụng.",
-        imageSrc: "/individual-service/steps/tongvs/2.webp"
+        imageSrc: "/individual-service/steps/maylanh/2.webp"
     },
     {
         title: "Chọn thời gian",
         description: "Chọn ngày, giờ và ghi chú cho dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/3.webp"
+        imageSrc: "/individual-service/steps/maylanh/3.webp"
     },
     {
         title: "Xác nhận thông tin",
         description: "Kiểm tra địa chỉ, thời gian và công việc.",
-        imageSrc: "/individual-service/steps/tongvs/4.webp"
+        imageSrc: "/individual-service/steps/maylanh/4.webp"
     },
     {
         title: "Chọn voucher",
         description: " Áp dụng ưu đãi phù hợp.",
-        imageSrc: "/individual-service/steps/tongvs/5.webp"
+        imageSrc: "/individual-service/steps/maylanh/5.webp"
     },
     {
         title: "Thanh toán & đặt dịch vụ",
         description: "Xác nhận chi phí, chọn phương thức thanh toán và hoàn tất đặt dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/6.webp"
+        imageSrc: "/individual-service/steps/maylanh/6.webp"
     }
 ];
 
@@ -76,22 +76,22 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị dụng cụ và dung dịch",
         description: "Chuẩn bị máy hút bụi mini, chổi cọ mềm, khăn khô, dung dịch vệ sinh dàn lạnh/dàn nóng và túi hứng nước vệ sinh chuyên dụng. Đây là các vật dụng cần thiết để làm sạch máy lạnh an toàn và hiệu quả.",
-        image: "/images/workflow1.jpg"
+        image: "/individual-service/steps/theogio/B1.webp"
     },
     {
         title: "Vệ sinh dàn lạnh trong nhà",
         description: "Tắt nguồn điện, tháo mặt nạ và lưới lọc bụi. Dùng máy hút bụi hoặc chổi mềm để loại bỏ bụi bẩn, sau đó rửa sạch lưới lọc bằng nước. Xịt dung dịch vệ sinh vào dàn lạnh, để vài phút rồi rửa trôi bụi bẩn bằng túi hứng nước.",
-        image: "/images/workflow2.jpg"
+        image: "/individual-service/steps/maylanh/B2.webp"
     },
     {
         title: "Làm sạch dàn nóng ngoài trời",
         description: "Dùng chổi mềm hoặc máy hút bụi để làm sạch bụi bám bên ngoài dàn nóng. Nếu có thể, dùng vòi xịt nước áp lực vừa phải để rửa sạch cánh tản nhiệt, giúp máy tản nhiệt nhanh hơn và hoạt động ổn định.",
-        image: "/images/workflow3.jpg"
+        image: "/individual-service/steps/theogio/B3.webp"
     },
     {
         title: "Hoàn tất và bảo dưỡng định kỳ",
         description: "Lau khô, lắp lại các bộ phận và bật máy thử để kiểm tra hoạt động. Nên vệ sinh máy lạnh định kỳ 3–6 tháng/lần để không khí trong lành hơn, máy vận hành êm ái, tiết kiệm điện và tăng tuổi thọ.",
-        image: "/images/workflow4.jpg"
+        image: "/individual-service/steps/theogio/B1.webp"
     }
 ];
 

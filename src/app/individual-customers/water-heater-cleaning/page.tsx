@@ -17,32 +17,32 @@ const steps: BookingStep[] = [
     {
         title: "Chọn dịch vụ",
         description: "Nhấn vào biểu tượng Vệ sinh máy nóng lạnh.",
-        imageSrc: "/individual-service/steps/tongvs/1.webp"
+        imageSrc: "/individual-service/steps/maynonglanh/1.webp"
     },
     {
         title: "Tùy chọn dịch vụ",
         description: "Chọn gói dịch vụ, mục cần làm và dụng cụ sử dụng.",
-        imageSrc: "/individual-service/steps/tongvs/2.webp"
+        imageSrc: "/individual-service/steps/maynonglanh/2.webp"
     },
     {
         title: "Chọn thời gian",
         description: "Chọn ngày, giờ và ghi chú cho dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/3.webp"
+        imageSrc: "/individual-service/steps/maynonglanh/3.webp"
     },
     {
         title: "Xác nhận thông tin",
         description: "Kiểm tra địa chỉ, thời gian và công việc.",
-        imageSrc: "/individual-service/steps/tongvs/4.webp"
+        imageSrc: "/individual-service/steps/maynonglanh/4.webp"
     },
     {
         title: "Chọn voucher",
         description: " Áp dụng ưu đãi phù hợp.",
-        imageSrc: "/individual-service/steps/tongvs/5.webp"
+        imageSrc: "/individual-service/steps/maynonglanh/5.webp"
     },
     {
         title: "Thanh toán & đặt dịch vụ",
         description: "Xác nhận chi phí, chọn phương thức thanh toán và hoàn tất đặt dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/6.webp"
+        imageSrc: "/individual-service/steps/maynonglanh/6.webp"
     }
 ];
 
@@ -75,22 +75,22 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị dụng cụ và dung dịch",
         description: "Chuẩn bị tua-vít, khăn sạch, bàn chải nhỏ, vòi xịt, cùng dung dịch vệ sinh an toàn (giấm trắng, baking soda hoặc dung dịch tẩy rửa chuyên dụng). Đây là những vật dụng cơ bản giúp quá trình vệ sinh diễn ra nhanh chóng và hiệu quả.",
-        image: "/images/workflow1.jpg"
+        image: "/individual-service/steps/theogio/B1.webp"
     },
     {
         title: "Ngắt nguồn điện và tháo linh kiện",
         description: "Trước khi vệ sinh, tắt nguồn điện để đảm bảo an toàn. Tháo các bộ phận như khay chứa nước, ống dẫn hoặc bình chứa để kiểm tra và vệ sinh.",
-        image: "/images/workflow2.jpg"
+        image: "/individual-service/steps/maynonglanh/B2.webp"
     },
     {
         title: "Vệ sinh bình chứa và bộ phận bên trong",
         description: "Sử dụng dung dịch vệ sinh để loại bỏ cặn bẩn, rong rêu hoặc lớp bám trong bình chứa. Dùng bàn chải cọ sạch các khe nhỏ, sau đó rửa lại bằng nước sạch. Kiểm tra và làm sạch ống dẫn, tránh tắc nghẽn hoặc cặn bám lâu ngày.",
-        image: "/images/workflow3.jpg"
+        image: "/individual-service/steps/theogio/B3.webp"
     },
     {
         title: "Lắp lại và bảo dưỡng định kỳ",
         description: "Sau khi làm sạch, lau khô và lắp lại các bộ phận. Kết nối nguồn điện và kiểm tra hoạt động của máy. Nên vệ sinh máy nước nóng lạnh 3–6 tháng/lần để đảm bảo nguồn nước sinh hoạt an toàn, hạn chế hỏng hóc và tăng độ bền cho thiết bị.",
-        image: "/images/workflow4.jpg"
+        image: "/individual-service/steps/theogio/B4.webp"
     }
 ];
 

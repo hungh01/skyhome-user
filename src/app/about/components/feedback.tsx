@@ -67,7 +67,7 @@ export default function CustomersFeedback() {
     return (
         <section className="w-[72%] h-screen py-20 md:py-40 mx-auto ">
             <div className="h-1/3  rounded-3xl max-w-3xl mx-auto">
-                <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-center mb-10 text-sky-900">
+                <h2 className="text-xl sm:text-3xl lg:text-6xl font-bold text-center mb-10 text-sky-900">
                     Đánh giá của khách hàng
                 </h2>
 

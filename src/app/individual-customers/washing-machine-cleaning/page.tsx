@@ -17,32 +17,32 @@ const steps: BookingStep[] = [
     {
         title: "Chọn dịch vụ",
         description: "Nhấn vào biểu tượng Vệ sinh máy giặt.",
-        imageSrc: "/individual-service/steps/tongvs/1.webp"
+        imageSrc: "/individual-service/steps/maygiat/1.webp"
     },
     {
         title: "Tùy chọn dịch vụ",
         description: "Chọn gói dịch vụ, mục cần làm và dụng cụ sử dụng.",
-        imageSrc: "/individual-service/steps/tongvs/2.webp"
+        imageSrc: "/individual-service/steps/maygiat/2.webp"
     },
     {
         title: "Chọn thời gian",
         description: "Chọn ngày, giờ và ghi chú cho dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/3.webp"
+        imageSrc: "/individual-service/steps/maygiat/3.webp"
     },
     {
         title: "Xác nhận thông tin",
         description: "Kiểm tra địa chỉ, thời gian và công việc.",
-        imageSrc: "/individual-service/steps/tongvs/4.webp"
+        imageSrc: "/individual-service/steps/maygiat/4.webp"
     },
     {
         title: "Chọn voucher",
         description: " Áp dụng ưu đãi phù hợp.",
-        imageSrc: "/individual-service/steps/tongvs/5.webp"
+        imageSrc: "/individual-service/steps/maygiat/5.webp"
     },
     {
         title: "Thanh toán & đặt dịch vụ",
         description: "Xác nhận chi phí, chọn phương thức thanh toán và hoàn tất đặt dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/6.webp"
+        imageSrc: "/individual-service/steps/maygiat/6.webp"
     }
 ];
 
@@ -76,22 +76,22 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị đầy đủ dụng cụ",
         description: "Chuẩn bị giấm trắng, baking soda hoặc dung dịch vệ sinh chuyên dụng, thêm khăn mềm, bàn chải nhỏ và bình xịt. Đây là những vật dụng cần thiết để làm sạch từ lồng giặt, khay bột giặt cho đến các chi tiết nhỏ.",
-        image: "/images/workflow1.jpg"
+        image: "/individual-service/steps/theogio/B1.webp"
     },
     {
         title: "Vệ sinh lồng giặt",
         description: "Sử dụng chế độ Tự vệ sinh (nếu máy có sẵn) hoặc cho giấm trắng vào chạy chu trình nước nóng để diệt khuẩn, sau đó dùng baking soda khử mùi và loại bỏ cặn bẩn. Cách này giúp lồng giặt sạch sâu, quần áo thơm tho hơn sau mỗi lần giặt.",
-        image: "/images/workflow2.jpg"
+        image: "/individual-service/steps/maygiat/B2.webp"
     },
     {
         title: "Làm sạch các chi tiết máy",
         description: "Tháo khay bột giặt, ngâm và chà sạch cặn bám; vệ sinh ron cao su (máy cửa ngang) để loại bỏ nấm mốc; tháo rửa màng lọc, kiểm tra ống xả để tránh tắc nghẽn. Đây là những vị trí dễ bẩn nhưng hay bị bỏ quên.",
-        image: "/images/workflow3.jpg"
+        image: "/individual-service/steps/theogio/B3.webp"
     },
     {
         title: "Hoàn tất và bảo quản",
         description: "Lau sạch vỏ ngoài máy bằng khăn mềm, xịt rửa các khe nhỏ. Sau khi vệ sinh, nên mở cửa máy và khay bột giặt để hong khô, giữ máy luôn thông thoáng, hạn chế ẩm mốc và kéo dài tuổi thọ.",
-        image: "/images/workflow4.jpg"
+        image: "/individual-service/steps/theogio/B4.webp"
     }
 ];
 

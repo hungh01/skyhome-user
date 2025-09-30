@@ -33,14 +33,14 @@ export default function BusinessCustomers() {
                     content={
                         <>
                             <h1 className="text-3xl sm:text-5xl lg:text-8xl font-bold text-sky-900 leading-tight mb-6">
-                                {"Dịch vụ"}
+                                {"Khách hàng"}
                                 <br />
                                 <p className="text-2xl sm:text-4xl  lg:text-8xl">
-                                    {"Tiện ích"}
+                                    {"Doanh nghiệp"}
                                 </p>
                             </h1>
                             <p className="text-base sm:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
-                                {"Dịch vụ dọn dẹp theo giờ của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."}
+                                {"Dịch vụ vệ sinh chuyên nghiệp cho văn phòng, tòa nhà, đảm bảo môi trường làm việc trong lành và gọn gàng."}
                             </p>
                             <NavigationButton text={"Giá trị mang lại"} href={"/individual-customers/hourly-cleaning/service-form"} textsize="text-xl" />
                         </>

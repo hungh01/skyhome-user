@@ -64,7 +64,7 @@ export default function Others() {
                     buttonLink="/individual-customers/booking"
                     imageSrc="/individual-service/icon-services/dichvukhac.webp"
                 />
-                <WorkFlow items={workFlow} />
+                <WorkFlow items={workFlow} title="" />
             </div>
         </>
     );

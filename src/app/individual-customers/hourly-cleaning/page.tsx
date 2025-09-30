@@ -18,32 +18,32 @@ const steps: BookingStep[] = [
     {
         title: "Chọn dịch vụ",
         description: "Nhấn vào biểu tượng Vệ sinh theo giờ.",
-        imageSrc: "/individual-service/steps/tongvs/1.webp"
+        imageSrc: "/individual-service/steps/theogio/1.webp"
     },
     {
         title: "Tùy chọn dịch vụ",
         description: "Chọn gói dịch vụ, mục cần làm và dụng cụ sử dụng.",
-        imageSrc: "/individual-service/steps/tongvs/2.webp"
+        imageSrc: "/individual-service/steps/theogio/2.webp"
     },
     {
         title: "Chọn thời gian",
         description: "Chọn ngày, giờ và ghi chú cho dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/3.webp"
+        imageSrc: "/individual-service/steps/theogio/3.webp"
     },
     {
         title: "Xác nhận thông tin",
         description: "Kiểm tra địa chỉ, thời gian và công việc.",
-        imageSrc: "/individual-service/steps/tongvs/4.webp"
+        imageSrc: "/individual-service/steps/theogio/4.webp"
     },
     {
         title: "Chọn voucher",
         description: " Áp dụng ưu đãi phù hợp.",
-        imageSrc: "/individual-service/steps/tongvs/5.webp"
+        imageSrc: "/individual-service/steps/theogio/5.webp"
     },
     {
         title: "Thanh toán & đặt dịch vụ",
         description: "Xác nhận chi phí, chọn phương thức thanh toán và hoàn tất đặt dịch vụ.",
-        imageSrc: "/individual-service/steps/tongvs/6.webp"
+        imageSrc: "/individual-service/steps/theogio/6.webp"
     }
 ];
 
@@ -76,22 +76,22 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị và sắp xếp dụng cụ",
         description: "Khách hàng có thể chọn dùng dụng cụ có sẵn tại nhà hoặc để đối tác SkyHome mang theo. Việc chuẩn bị đầy đủ chổi, khăn lau, cây lau nhà, nước lau sàn… giúp quá trình vệ sinh diễn ra nhanh gọn.",
-        image: "/images/workflow1.jpg"
+        image: "/individual-service/steps/theogio/B1.webp"
     },
     {
         title: "Thực hiện vệ sinh theo khu vực",
         description: "Đối tác bắt đầu dọn dẹp từ những khu vực ưu tiên như phòng khách, bếp, phòng ngủ, sau đó đến các góc nhỏ và nhà vệ sinh. Mọi đồ đạc được lau chùi, sắp xếp gọn gàng, giữ nguyên sự riêng tư của gia đình.",
-        image: "/images/workflow2.jpg"
+        image: "/individual-service/steps/theogio/B2.webp"
     },
     {
         title: "Kiểm tra và hoàn thiện công việc",
         description: "Sau khi làm sạch, đối tác rà soát lại từng khu vực, đảm bảo không bỏ sót chi tiết nào. Các vật dụng được đặt đúng vị trí, không gian trở nên sạch sẽ, thoáng mát và ngăn nắp.",
-        image: "/images/workflow3.jpg"
+        image: "/individual-service/steps/theogio/B3.webp"
     },
     {
         title: "Bàn giao và ghi nhận ý kiến khách hàng",
         description: "Kết thúc dịch vụ, khách hàng kiểm tra kết quả và phản hồi trực tiếp. Mọi góp ý sẽ được SkyHome tiếp nhận để cải thiện, mang lại trải nghiệm vệ sinh theo giờ ngày càng tốt hơn.",
-        image: "/images/workflow4.jpg"
+        image: "/individual-service/steps/theogio/B4.webp"
     }
 ];
 export default function HourlyCleaning() {
