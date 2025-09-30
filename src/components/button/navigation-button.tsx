@@ -8,7 +8,7 @@ interface NavigationButtonProps {
     textsize?: string;
 }
 
-export default function NavigationButton({ text, href = "#", textsize = "text-sm" }: NavigationButtonProps) {
+export default function NavigationButton({ text, href = "#", textsize = "text-xl" }: NavigationButtonProps) {
     return (
         <a
             className="group relative inline-flex items-center overflow-hidden rounded-3xl border border-current px-8 py-3 bg-gradient-to-r from-sky-800 to-sky-500 text-white focus:ring-3 focus:outline-hidden"

@@ -74,26 +74,27 @@ const features: CustomerCareService[] = [
 
 const workFlow: WorkingStep[] = [
     {
-        title: "Đặt dịch vụ",
-        description: "Chọn gói dịch vụ và thời gian phù hợp với bạn.",
+        title: "Chuẩn bị dụng cụ và phân công công việc",
+        description: "Đối tác SkyHome mang theo đầy đủ dụng cụ chuyên dụng và hóa chất an toàn. Nhóm 3–4 đối tác được phân chia rõ ràng nhiệm vụ: lau dọn trần, cửa kính, sàn nhà, nhà bếp và khu vệ sinh.",
         image: "/images/workflow1.jpg"
     },
     {
-        title: "Xác nhận",
-        description: "Nhân viên của chúng tôi sẽ liên hệ để xác nhận chi tiết.",
+        title: "Vệ sinh toàn diện từng khu vực",
+        description: "Mỗi đối tác thực hiện dọn dẹp chi tiết: quét bụi, lau chùi, hút bụi, khử mùi, xử lý vết bẩn lâu ngày. Tất cả không gian từ phòng khách, phòng ngủ đến bếp và nhà tắm đều được chú ý kỹ lưỡng.",
         image: "/images/workflow2.jpg"
     },
     {
-        title: "Thực hiện dịch vụ",
-        description: "Đội ngũ chuyên nghiệp sẽ đến và hoàn thành công việc.",
+        title: "Kiểm tra chéo và hoàn thiện công việc",
+        description: "Sau khi vệ sinh xong, các đối tác kiểm tra chéo để không bỏ sót bất kỳ khu vực nào. Cửa kính sáng bóng, sàn sạch sẽ, bề mặt gọn gàng, giúp không gian sáng sủa, thoáng mát.",
         image: "/images/workflow3.jpg"
     },
     {
-        title: "Hoàn tất và đánh giá",
-        description: "Kiểm tra kết quả và chia sẻ phản hồi của bạn.",
+        title: "Bàn giao cho khách hàng",
+        description: "Kết thúc, nhóm đối tác bàn giao lại không gian đã được tổng vệ sinh toàn diện. Khách hàng kiểm tra, đưa phản hồi trực tiếp để SkyHome ghi nhận và cải thiện dịch vụ.",
         image: "/images/workflow4.jpg"
     }
 ];
+
 
 
 export default function TotalMachineCleaning() {

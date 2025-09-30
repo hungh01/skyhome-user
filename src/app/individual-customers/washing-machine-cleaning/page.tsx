@@ -74,26 +74,27 @@ const features: CustomerCareService[] = [
 
 const workFlow: WorkingStep[] = [
     {
-        title: "Đặt dịch vụ",
-        description: "Chọn gói dịch vụ và thời gian phù hợp với bạn.",
+        title: "Chuẩn bị đầy đủ dụng cụ",
+        description: "Chuẩn bị giấm trắng, baking soda hoặc dung dịch vệ sinh chuyên dụng, thêm khăn mềm, bàn chải nhỏ và bình xịt. Đây là những vật dụng cần thiết để làm sạch từ lồng giặt, khay bột giặt cho đến các chi tiết nhỏ.",
         image: "/images/workflow1.jpg"
     },
     {
-        title: "Xác nhận",
-        description: "Nhân viên của chúng tôi sẽ liên hệ để xác nhận chi tiết.",
+        title: "Vệ sinh lồng giặt",
+        description: "Sử dụng chế độ Tự vệ sinh (nếu máy có sẵn) hoặc cho giấm trắng vào chạy chu trình nước nóng để diệt khuẩn, sau đó dùng baking soda khử mùi và loại bỏ cặn bẩn. Cách này giúp lồng giặt sạch sâu, quần áo thơm tho hơn sau mỗi lần giặt.",
         image: "/images/workflow2.jpg"
     },
     {
-        title: "Thực hiện dịch vụ",
-        description: "Đội ngũ chuyên nghiệp sẽ đến và hoàn thành công việc.",
+        title: "Làm sạch các chi tiết máy",
+        description: "Tháo khay bột giặt, ngâm và chà sạch cặn bám; vệ sinh ron cao su (máy cửa ngang) để loại bỏ nấm mốc; tháo rửa màng lọc, kiểm tra ống xả để tránh tắc nghẽn. Đây là những vị trí dễ bẩn nhưng hay bị bỏ quên.",
         image: "/images/workflow3.jpg"
     },
     {
-        title: "Hoàn tất và đánh giá",
-        description: "Kiểm tra kết quả và chia sẻ phản hồi của bạn.",
+        title: "Hoàn tất và bảo quản",
+        description: "Lau sạch vỏ ngoài máy bằng khăn mềm, xịt rửa các khe nhỏ. Sau khi vệ sinh, nên mở cửa máy và khay bột giặt để hong khô, giữ máy luôn thông thoáng, hạn chế ẩm mốc và kéo dài tuổi thọ.",
         image: "/images/workflow4.jpg"
     }
 ];
+
 
 
 export default function WashingMachineCleaningPage() {

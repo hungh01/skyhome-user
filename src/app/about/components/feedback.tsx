@@ -65,7 +65,7 @@ export default function CustomersFeedback() {
     const next = () => setIndex((prev) => (prev + 1) % feedbacks.length);
 
     return (
-        <section className="w-[72%] h-screen py-40 mx-auto ">
+        <section className="w-[72%] h-screen py-20 md:py-40 mx-auto ">
             <div className="h-1/3  rounded-3xl max-w-3xl mx-auto">
                 <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-center mb-10 text-sky-900">
                     Đánh giá của khách hàng
@@ -114,7 +114,7 @@ export default function CustomersFeedback() {
                                     ))}
                                 </div>
                             </div>
-                            <p className="text-base text-gray-700 mb-4">&quot;{fb.text}&quot;</p>
+                            <p className="text-sm md:text-base text-gray-700 mb-4">&quot;{fb.text}&quot;</p>
                             <div className="flex items-center mt-2">
                                 <div className="w-10 h-10 bg-gray-300 rounded-full mr-2 relative overflow-hidden">
                                     <Image src={fb.img} alt={fb.name} fill style={{ objectFit: "cover" }} />

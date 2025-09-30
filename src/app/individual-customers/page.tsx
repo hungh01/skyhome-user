@@ -9,7 +9,7 @@ export default function BusinessCustomers() {
     return (
         <div className="w-full h-auto text-sky-900 bg-cover bg-center">
 
-            <div className="content">
+            <div className="content bg-[url('/home-page/sky.webp')] bg-cover bg-center">
                 <MainSection />
                 <ServiceSection />
             </div>

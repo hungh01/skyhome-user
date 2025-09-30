@@ -24,7 +24,7 @@ export default function SkyhomeCustomers() {
                             Khách hàng cá nhân
                         </h1>
                         <span className="text-gray-500 text-base md:text-xl block text-left mb-3">
-                            👉 Giải pháp vệ sinh cho nhà ở, căn hộ, giúp không gian luôn sạch sẽ và thoải mái.
+                            Giải pháp vệ sinh cho nhà ở, căn hộ, giúp không gian luôn sạch sẽ và thoải mái.
                         </span>
                         <NavigationButton text="Xem thêm" href="/individual-customers" textsize="text-sm" />
                     </div>
@@ -45,7 +45,7 @@ export default function SkyhomeCustomers() {
                             Khách hàng doanh nghiệp
                         </h1>
                         <span className="text-gray-500 text-base md:text-xl block text-right mb-3">
-                            👉 Dịch vụ vệ sinh chuyên nghiệp cho văn phòng, tòa nhà, đảm bảo môi trường làm việc trong lành và gọn gàng.
+                            Dịch vụ vệ sinh chuyên nghiệp cho văn phòng, tòa nhà, đảm bảo môi trường làm việc trong lành và gọn gàng.
                         </span>
                         <NavigationButton text="Xem thêm" href="/business-customers" textsize="text-sm" />
                     </div>

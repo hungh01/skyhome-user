@@ -1,46 +1,41 @@
 'use client';
 
 import NavigationButton from "@/components/button/navigation-button";
+import RightImage from "@/components/split-2-side/right-image";
 import { useViewportContext } from "@/providers/viewport-provider";
 import Image from "next/image";
 
 export default function MainSection() {
-
-    const { isMobile, width } = useViewportContext();
+    const { isMobile } = useViewportContext();
 
     return (
-        <section className={`w-full ${isMobile ? 'h-auto' : 'h-screen'} relative overflow-hidden pt-3 bg-[url('/home-page/sky.webp')] bg-cover bg-center`}>
-            {/* Content */}
-            <div className="relative z-20 w-[76%] mx-auto px-4 sm:px-6 lg:px-8 h-full">
-                <div className="flex lg:flex-row items-center justify-between h-full pt-16 lg:py-0">
-                    {/* Left Content */}
-                    <div className="w-1/2 text-center lg:text-left mb-4 lg:mb-0 order-1 lg:order-1">
-                        <h1 className={`text-2xl ${width < 1058 && width > 810 ? 'text-5xl' : ''} ${width < 850 ? 'text-3xl' : ''} ${width > 1058 ? 'text-8xl' : ''} font-bold text-sky-900 leading-tight mb-6`}>
+        <>
+            <RightImage
+                content={
+                    <>
+                        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-sky-900 leading-tight mb-6">
                             Khách hàng
                             <br />
                             Cá nhân
                         </h1>
-                        <p className="text-xs sm:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
+                        <p className="text-base sm:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
                             Tại SkyHome, con người luôn là trung tâm.<br />Chúng tôi không chỉ cung cấp dịch vụ,<br />mà cùng nhau tạo ra giá trị sống.
                         </p>
-                        <NavigationButton text={`Giá trị mang lại`} href="/about/value" textsize="text-xl" />
+                        <NavigationButton text="Giá trị mang lại" href="/about/value" textsize="text-xl" />
+                    </>
+                }
+                image={
+                    <div className="w-full h-full flex justify-center items-center">
+                        <Image
+                            src="/individual-service/main-rightside-image.webp"
+                            alt="Culture Personality Image"
+                            width={2080}
+                            height={1560}
+                            className="w-full h-full object-contain z-30"
+                        />
                     </div>
-
-                    {/* Right Content - Phone Mockup */}
-                    <div className="w-1/2 h-screen flex justify-center items-center lg:justify-center order-2 lg:order-2 mb-0 lg:mb-0 lg:pt-0">
-                        <div className="pt-16">
-                            <Image
-                                src="/individual-service/main-rightside-image.webp"
-                                alt="Culture Personality Image"
-                                width={2080}
-                                height={1120}
-                                className="w-full h-full z-30"
-                            />
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
+                }
+            />
+        </>
     );
 }

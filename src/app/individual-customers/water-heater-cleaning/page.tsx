@@ -71,26 +71,25 @@ const features: CustomerCareService[] = [
     }
 ];
 
-
 const workFlow: WorkingStep[] = [
     {
-        title: "Đặt dịch vụ",
-        description: "Chọn gói dịch vụ và thời gian phù hợp với bạn.",
+        title: "Chuẩn bị dụng cụ và dung dịch",
+        description: "Chuẩn bị tua-vít, khăn sạch, bàn chải nhỏ, vòi xịt, cùng dung dịch vệ sinh an toàn (giấm trắng, baking soda hoặc dung dịch tẩy rửa chuyên dụng). Đây là những vật dụng cơ bản giúp quá trình vệ sinh diễn ra nhanh chóng và hiệu quả.",
         image: "/images/workflow1.jpg"
     },
     {
-        title: "Xác nhận",
-        description: "Nhân viên của chúng tôi sẽ liên hệ để xác nhận chi tiết.",
+        title: "Ngắt nguồn điện và tháo linh kiện",
+        description: "Trước khi vệ sinh, tắt nguồn điện để đảm bảo an toàn. Tháo các bộ phận như khay chứa nước, ống dẫn hoặc bình chứa để kiểm tra và vệ sinh.",
         image: "/images/workflow2.jpg"
     },
     {
-        title: "Thực hiện dịch vụ",
-        description: "Đội ngũ chuyên nghiệp sẽ đến và hoàn thành công việc.",
+        title: "Vệ sinh bình chứa và bộ phận bên trong",
+        description: "Sử dụng dung dịch vệ sinh để loại bỏ cặn bẩn, rong rêu hoặc lớp bám trong bình chứa. Dùng bàn chải cọ sạch các khe nhỏ, sau đó rửa lại bằng nước sạch. Kiểm tra và làm sạch ống dẫn, tránh tắc nghẽn hoặc cặn bám lâu ngày.",
         image: "/images/workflow3.jpg"
     },
     {
-        title: "Hoàn tất và đánh giá",
-        description: "Kiểm tra kết quả và chia sẻ phản hồi của bạn.",
+        title: "Lắp lại và bảo dưỡng định kỳ",
+        description: "Sau khi làm sạch, lau khô và lắp lại các bộ phận. Kết nối nguồn điện và kiểm tra hoạt động của máy. Nên vệ sinh máy nước nóng lạnh 3–6 tháng/lần để đảm bảo nguồn nước sinh hoạt an toàn, hạn chế hỏng hóc và tăng độ bền cho thiết bị.",
         image: "/images/workflow4.jpg"
     }
 ];

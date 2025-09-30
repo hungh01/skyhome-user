@@ -74,27 +74,26 @@ const features: CustomerCareService[] = [
 
 const workFlow: WorkingStep[] = [
     {
-        title: "Đặt dịch vụ",
-        description: "Chọn gói dịch vụ và thời gian phù hợp với bạn.",
+        title: "Chuẩn bị và sắp xếp dụng cụ",
+        description: "Khách hàng có thể chọn dùng dụng cụ có sẵn tại nhà hoặc để đối tác SkyHome mang theo. Việc chuẩn bị đầy đủ chổi, khăn lau, cây lau nhà, nước lau sàn… giúp quá trình vệ sinh diễn ra nhanh gọn.",
         image: "/images/workflow1.jpg"
     },
     {
-        title: "Xác nhận",
-        description: "Nhân viên của chúng tôi sẽ liên hệ để xác nhận chi tiết.",
+        title: "Thực hiện vệ sinh theo khu vực",
+        description: "Đối tác bắt đầu dọn dẹp từ những khu vực ưu tiên như phòng khách, bếp, phòng ngủ, sau đó đến các góc nhỏ và nhà vệ sinh. Mọi đồ đạc được lau chùi, sắp xếp gọn gàng, giữ nguyên sự riêng tư của gia đình.",
         image: "/images/workflow2.jpg"
     },
     {
-        title: "Thực hiện dịch vụ",
-        description: "Đội ngũ chuyên nghiệp sẽ đến và hoàn thành công việc.",
+        title: "Kiểm tra và hoàn thiện công việc",
+        description: "Sau khi làm sạch, đối tác rà soát lại từng khu vực, đảm bảo không bỏ sót chi tiết nào. Các vật dụng được đặt đúng vị trí, không gian trở nên sạch sẽ, thoáng mát và ngăn nắp.",
         image: "/images/workflow3.jpg"
     },
     {
-        title: "Hoàn tất và đánh giá",
-        description: "Kiểm tra kết quả và chia sẻ phản hồi của bạn.",
+        title: "Bàn giao và ghi nhận ý kiến khách hàng",
+        description: "Kết thúc dịch vụ, khách hàng kiểm tra kết quả và phản hồi trực tiếp. Mọi góp ý sẽ được SkyHome tiếp nhận để cải thiện, mang lại trải nghiệm vệ sinh theo giờ ngày càng tốt hơn.",
         image: "/images/workflow4.jpg"
     }
 ];
-
 export default function HourlyCleaning() {
 
     useEffect(() => {

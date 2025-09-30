@@ -40,7 +40,7 @@ export default function MainSection() {
                             Luôn lắng nghe phản hồi, giải quyết vấn đề nhanh chóng <br /> và chuyên nghiệp để đảm bảo sự hài lòng tối đa
                         </p>
 
-                        <NavigationButton text="Liên hệ với chúng tôi" href="/support" />
+                        <NavigationButton text="Liên hệ với chúng tôi" href="/support" textsize={`${width < 850 ? 'text-sm' : 'text-base'}`} />
                     </div>
 
                     {/* Right Content - Phone Mockup */}
