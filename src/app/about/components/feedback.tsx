@@ -79,7 +79,7 @@ export default function CustomersFeedback() {
                 </p>
             </div>
 
-            <div className="relative h-2/3 flex items-center justify-center">
+            <div className="relative h-2/3 flex items-center justify-center pt-20">
                 {/* Nút trái */}
                 {isMobile && (
                     <button
