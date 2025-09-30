@@ -12,57 +12,65 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 
+
 const steps: BookingStep[] = [
     {
-        title: "Bước 1",
-        description: "Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1 Mô tả bước 1",
-        imageSrc: "/about/review/customer5.jpg"
+        title: "Chọn dịch vụ",
+        description: "Nhấn vào biểu tượng vệ sinh máy lạnh",
+        imageSrc: "/individual-service/steps/tongvs/1.webp"
     },
     {
-        title: "Bước 2",
-        description: "Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2 Mô tả bước 2",
-        imageSrc: "/about/review/customer1.png"
+        title: "Tùy chọn dịch vụ",
+        description: "Chọn gói dịch vụ, mục cần làm và dụng cụ sử dụng.",
+        imageSrc: "/individual-service/steps/tongvs/2.webp"
     },
     {
-        title: "Bước 3",
-        description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
-        imageSrc: "/about/review/customer5.jpg"
+        title: "Chọn thời gian",
+        description: "Chọn ngày, giờ và ghi chú cho dịch vụ.",
+        imageSrc: "/individual-service/steps/tongvs/3.webp"
     },
     {
-        title: "Bước 4",
-        description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
-        imageSrc: "/about/review/customer6.jpg"
+        title: "Xác nhận thông tin",
+        description: "Kiểm tra địa chỉ, thời gian và công việc.",
+        imageSrc: "/individual-service/steps/tongvs/4.webp"
     },
     {
-        title: "Bước 5",
-        description: "Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3 Mô tả bước 3",
-        imageSrc: "/about/review/customer5.jpg"
+        title: "Chọn voucher",
+        description: " Áp dụng ưu đãi phù hợp.",
+        imageSrc: "/individual-service/steps/tongvs/5.webp"
+    },
+    {
+        title: "Thanh toán & đặt dịch vụ",
+        description: "Xác nhận chi phí, chọn phương thức thanh toán và hoàn tất đặt dịch vụ.",
+        imageSrc: "/individual-service/steps/tongvs/6.webp"
     }
 ];
+
 
 const features: CustomerCareService[] = [
     {
-        title: "Đội ngũ chuyên nghiệp",
-        description: "Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. Nhân viên được đào tạo bài bản, tận tâm với công việc. ",
-        icon: "https://img.icons8.com/sf-black/64/group-foreground-selected.png"
+        title: "An toàn",
+        description: "SkyHome đặt an toàn làm tiêu chí hàng đầu trong dịch vụ vệ sinh theo giờ. Nhân viên và đối tác được tuyển chọn kỹ lưỡng, đào tạo bài bản, giúp khách hàng yên tâm khi vệ sinh nhà ở hay không gian cá nhân.",
+        icon: "/icons/why-choose-icons/antoan.webp"
     },
     {
-        title: "Dịch vụ linh hoạt",
-        description: "Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.Lựa chọn thời gian và gói dịch vụ phù hợp với nhu cầu của bạn.",
-        icon: "https://img.icons8.com/ios-filled/50/online-support.png"
+        title: "Minh bạch",
+        description: "Dịch vụ vệ sinh theo giờ tại SkyHome luôn đi kèm bảng giá công khai và rõ ràng. Khách hàng có thể dễ dàng biết trước chi phí, lựa chọn gói dịch vụ phù hợp với nhu cầu thực tế và ngân sách gia đình.",
+        icon: "/icons/why-choose-icons/chatluong.webp"
     },
     {
-        title: "Bảo đảm an toàn",
-        description: "Cam kết bảo vệ tài sản và quyền riêng tư của khách hàng.",
-        icon: "https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/66/external-protected-user-interface-smashingstocks-glyph-smashing-stocks.png"
+        title: "Chất lượng",
+        description: "SkyHome sở hữu đội ngũ nhân viên và đối tác có chuyên môn cùng thiết bị vệ sinh hiện đại. Mọi quy trình vệ sinh theo giờ được thực hiện theo chuẩn, đảm bảo không gian sạch sẽ, gọn gàng và an toàn cho sức khỏe.",
+        icon: "/icons/why-choose-icons/minhbach.webp"
     },
 
     {
-        title: "Giá cả cạnh tranh",
-        description: "Dịch vụ chất lượng với mức giá hợp lý.",
-        icon: "https://img.icons8.com/ios/50/price-tag-usd--v1.png"
+        title: "Tiện lợi",
+        description: " Khách hàng đặt dịch vụ vệ sinh theo giờ chỉ với vài thao tác đơn giản. Thời gian linh hoạt giúp bạn chủ động sắp xếp lịch trình, thuận tiện cho cả công việc gia đình lẫn nhu cầu phát sinh đột xuất.",
+        icon: "/icons/why-choose-icons/tienloi.webp"
     }
 ];
+
 
 const workFlow: WorkingStep[] = [
     {
@@ -111,16 +119,15 @@ export default function AirConditioningCleaningPage() {
                 <MainSection
                     title1="Dịch vụ"
                     title2="Vệ sinh máy lạnh"
-                    description="Dịch vụ vệ sinh máy lạnh của SkyHome mang đến sự tiện lợi và linh hoạt cho khách hàng. Với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết cung cấp dịch vụ chất lượng cao, giúp bạn duy trì không gian sống sạch sẽ và thoải mái mà không cần phải lo lắng về việc thuê dài hạn."
+                    description="Làm sạch dàn lạnh và dàn nóng, tăng hiệu suất làm mát và giữ không khí trong lành."
                     buttonText="Đặt dịch vụ ngay"
                     buttonLink="/individual-customers/air-conditioning-cleaning/service-form"
                     imageSrc="/individual-service/icon-services/vsmaylanh.webp"
                 />
                 <ServiceProtected
                     title="An tâm với dịch vụ"
-                    description="Tại SkyHome, chúng tôi luôn đặt sự an tâm và hài lòng của khách hàng lên hàng đầu. Mỗi dịch vụ vệ sinh không chỉ dừng lại ở việc làm sạch, mà còn là cam kết về chất lượng, uy tín và sự chuyên nghiệp. Chúng tôi hiểu rằng mỗi gia đình, mỗi doanh nghiệp đều có nhu cầu và tiêu chuẩn riêng, vì thế SkyHome luôn lắng nghe và đưa ra giải pháp phù hợp, từ vệ sinh nhà ở, văn phòng, cho đến dịch vụ định kỳ và tổng vệ sinh toàn diện. 
-                Với đội ngũ nhân viên được đào tạo bài bản, tác phong chuyên nghiệp, SkyHome cam kết mang đến sự chỉn chu trong từng chi tiết, từ những góc nhỏ khó thấy đến toàn bộ không gian. Tất cả đều hướng đến mục tiêu tạo ra một môi trường sạch sẽ, gọn gàng, an toàn và trong lành, giúp khách hàng tận hưởng sự thoải mái tuyệt đối.
-                Lựa chọn SkyHome, bạn không chỉ nhận được một dịch vụ vệ sinh đơn thuần, mà còn là sự đồng hành đáng tin cậy trong việc kiến tạo và gìn giữ không gian sống, không gian làm việc chuẩn mực. SkyHome – sạch sẽ để bạn luôn an tâm." />
+                    description="An tâm khi tận hưởng không khí trong lành với dịch vụ vệ sinh máy lạnh SkyHome. Đối tác tiến hành làm sạch dàn lạnh, bộ lọc và các bộ phận quan trọng khác, loại bỏ hoàn toàn bụi bẩn, nấm mốc và mùi khó chịu. Nhờ vậy, máy lạnh hoạt động ổn định, tiết kiệm điện năng và kéo dài tuổi thọ. Sau khi vệ sinh, khách hàng có thể cảm nhận ngay luồng gió mát mẻ, trong lành và an toàn cho sức khỏe. Đây là dịch vụ cần thiết để bảo vệ gia đình, đặc biệt trong những ngày nắng nóng và môi trường đô thị ô nhiễm.
+Vệ sinh máy nước nóng lạnh" />
                 {/* Ensure these components do not cause state updates during render */}
                 <UserManual serviceName={'Vệ sinh máy lạnh'} steps={steps} />
                 <WhyChoose items={features} />

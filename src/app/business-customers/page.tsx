@@ -32,10 +32,10 @@ export default function BusinessCustomers() {
                 <RightImage
                     content={
                         <>
-                            <h1 className="text-3xl sm:text-5xl lg:text-9xl font-bold text-sky-900 leading-tight mb-6">
+                            <h1 className="text-3xl sm:text-5xl lg:text-8xl font-bold text-sky-900 leading-tight mb-6">
                                 {"Dịch vụ"}
                                 <br />
-                                <p className="text-2xl sm:text-4xl  lg:text-9xl">
+                                <p className="text-2xl sm:text-4xl  lg:text-8xl">
                                     {"Tiện ích"}
                                 </p>
                             </h1>
