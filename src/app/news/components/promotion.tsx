@@ -4,19 +4,19 @@ import Link from "next/link";
 export default function Promotion() {
     return (
         <section className="w-full min-h-screen flex flex-col items-center justify-center  py-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-sky-900">
+            <h2 className="text-3xl md:text-6xl font-bold text-center mb-10 text-sky-900">
                 Ưu đãi hấp dẫn
             </h2>
             <div className="w-[80%] mx-auto">
                 {/* Box vàng lớn */}
-                <div className="bg-yellow-300 rounded-2xl flex items-center justify-center h-72 md:h-80 mb-8">
+                <div className="bg-yellow-300 rounded-2xl flex items-center justify-center  mb-8">
                     {/* Icon hoặc hình ảnh ưu đãi */}
                     <Image
-                        src="/logo/white-logo.webp"
+                        src="/about/individual-customer.webp"
                         alt="Ưu đãi"
                         width={2080}
                         height={1120}
-                        className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                        className="w-full h-full  object-contain rounded-2xl"
                     />
                 </div>
                 {/* Nội dung dưới box */}
