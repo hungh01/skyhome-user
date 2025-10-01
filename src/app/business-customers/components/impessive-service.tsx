@@ -124,9 +124,6 @@ export default function ImpressiveService() {
                             key={item.id}
                             className="bg-[#FDDB00] rounded-lg p-4 flex flex-col"
                         >
-                            <h3 className="font-bold text-2xl text-sky-900 mb-2">
-                                {item.title}
-                            </h3>
                             <Image
                                 src={item.image}
                                 alt={item.title}
@@ -134,6 +131,9 @@ export default function ImpressiveService() {
                                 height={200}
                                 className="rounded-lg mb-2 w-2/3 mx-auto object-contain"
                             />
+                            <h3 className="font-bold text-2xl text-sky-900 mb-2 text-center">
+                                {item.title}
+                            </h3>
                             <p className="text-lg text-gray-800">{item.content}</p>
                         </div>
                     ))}
@@ -153,10 +153,6 @@ export default function ImpressiveService() {
               `}
                             style={{ flex: i === 0 ? 3 : 1 }}
                         >
-                            <h3 className="font-bold text-3xl text-sky-900 z-10">
-                                {item.title}
-                            </h3>
-
                             <div className="absolute inset-0 top-20 left-0 right-0 px-4 overflow-visible">
                                 <div
                                     ref={(el) => {
@@ -172,7 +168,9 @@ export default function ImpressiveService() {
                                         className="rounded-lg mb-2 w-1/2 mx-auto object-cover"
                                     />
                                 </div>
-
+                                <h3 className="font-bold text-3xl text-sky-900 z-10 text-center mb-5">
+                                    {item.title}
+                                </h3>
                                 <p
                                     ref={(el) => {
                                         if (el) textRefs.current[i] = el;
