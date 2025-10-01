@@ -76,7 +76,7 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị đầy đủ dụng cụ",
         description: "Chuẩn bị giấm trắng, baking soda hoặc dung dịch vệ sinh chuyên dụng, thêm khăn mềm, bàn chải nhỏ và bình xịt. Đây là những vật dụng cần thiết để làm sạch từ lồng giặt, khay bột giặt cho đến các chi tiết nhỏ.",
-        image: "/individual-service/steps/theogio/B1.webp"
+        image: "/individual-service/steps/maygiat/B1.webp"
     },
     {
         title: "Vệ sinh lồng giặt",
@@ -86,12 +86,12 @@ const workFlow: WorkingStep[] = [
     {
         title: "Làm sạch các chi tiết máy",
         description: "Tháo khay bột giặt, ngâm và chà sạch cặn bám; vệ sinh ron cao su (máy cửa ngang) để loại bỏ nấm mốc; tháo rửa màng lọc, kiểm tra ống xả để tránh tắc nghẽn. Đây là những vị trí dễ bẩn nhưng hay bị bỏ quên.",
-        image: "/individual-service/steps/theogio/B3.webp"
+        image: "/individual-service/steps/maygiat/B3.webp"
     },
     {
         title: "Hoàn tất và bảo quản",
         description: "Lau sạch vỏ ngoài máy bằng khăn mềm, xịt rửa các khe nhỏ. Sau khi vệ sinh, nên mở cửa máy và khay bột giặt để hong khô, giữ máy luôn thông thoáng, hạn chế ẩm mốc và kéo dài tuổi thọ.",
-        image: "/individual-service/steps/theogio/B4.webp"
+        image: "/individual-service/steps/maygiat/B4.webp"
     }
 ];
 

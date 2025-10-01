@@ -76,7 +76,7 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị dụng cụ và phân công công việc",
         description: "Đối tác SkyHome mang theo đầy đủ dụng cụ chuyên dụng và hóa chất an toàn. Nhóm 3–4 đối tác được phân chia rõ ràng nhiệm vụ: lau dọn trần, cửa kính, sàn nhà, nhà bếp và khu vệ sinh.",
-        image: "/individual-service/steps/theogio/B1.webp"
+        image: "/individual-service/steps/tongvs/B1.webp"
     },
     {
         title: "Vệ sinh toàn diện từng khu vực",
@@ -86,12 +86,12 @@ const workFlow: WorkingStep[] = [
     {
         title: "Kiểm tra chéo và hoàn thiện công việc",
         description: "Sau khi vệ sinh xong, các đối tác kiểm tra chéo để không bỏ sót bất kỳ khu vực nào. Cửa kính sáng bóng, sàn sạch sẽ, bề mặt gọn gàng, giúp không gian sáng sủa, thoáng mát.",
-        image: "/individual-service/steps/theogio/B3.webp"
+        image: "/individual-service/steps/tongvs/B3.webp"
     },
     {
         title: "Bàn giao cho khách hàng",
         description: "Kết thúc, nhóm đối tác bàn giao lại không gian đã được tổng vệ sinh toàn diện. Khách hàng kiểm tra, đưa phản hồi trực tiếp để SkyHome ghi nhận và cải thiện dịch vụ.",
-        image: "/individual-service/steps/theogio/B4.webp"
+        image: "/individual-service/steps/tongvs/B4.webp"
     }
 ];
 

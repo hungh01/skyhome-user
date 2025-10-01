@@ -75,7 +75,7 @@ const workFlow: WorkingStep[] = [
     {
         title: "Chuẩn bị dụng cụ và dung dịch",
         description: "Chuẩn bị tua-vít, khăn sạch, bàn chải nhỏ, vòi xịt, cùng dung dịch vệ sinh an toàn (giấm trắng, baking soda hoặc dung dịch tẩy rửa chuyên dụng). Đây là những vật dụng cơ bản giúp quá trình vệ sinh diễn ra nhanh chóng và hiệu quả.",
-        image: "/individual-service/steps/theogio/B1.webp"
+        image: "/individual-service/steps/maynonglanh/B1.webp"
     },
     {
         title: "Ngắt nguồn điện và tháo linh kiện",
@@ -85,12 +85,12 @@ const workFlow: WorkingStep[] = [
     {
         title: "Vệ sinh bình chứa và bộ phận bên trong",
         description: "Sử dụng dung dịch vệ sinh để loại bỏ cặn bẩn, rong rêu hoặc lớp bám trong bình chứa. Dùng bàn chải cọ sạch các khe nhỏ, sau đó rửa lại bằng nước sạch. Kiểm tra và làm sạch ống dẫn, tránh tắc nghẽn hoặc cặn bám lâu ngày.",
-        image: "/individual-service/steps/theogio/B3.webp"
+        image: "/individual-service/steps/maynonglanh/B3.webp"
     },
     {
         title: "Lắp lại và bảo dưỡng định kỳ",
         description: "Sau khi làm sạch, lau khô và lắp lại các bộ phận. Kết nối nguồn điện và kiểm tra hoạt động của máy. Nên vệ sinh máy nước nóng lạnh 3–6 tháng/lần để đảm bảo nguồn nước sinh hoạt an toàn, hạn chế hỏng hóc và tăng độ bền cho thiết bị.",
-        image: "/individual-service/steps/theogio/B4.webp"
+        image: "/individual-service/steps/maynonglanh/B4.webp"
     }
 ];
 
