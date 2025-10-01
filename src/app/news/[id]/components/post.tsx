@@ -111,7 +111,6 @@ const mockData = {
 
 export default function Post() {
 
-
     const editor = useEditor({
         extensions: [
             StarterKit.configure({
