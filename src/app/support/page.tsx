@@ -1,21 +1,19 @@
-import ServiceProtected from "@/components/service-form/service-protected";
+
 import LeftImage from "@/components/split-2-side/left-image";
 import Image from "next/image";
 import ContactChannels from "./components/social";
-import SafetyPolicy from "./components/safety-policy";
+import SafetyPolicyCommunications from "./components/safety-policy-communications";
+import Policy from "./components/policy";
 
 
 export default function BusinessCustomers() {
     return (
         <div className="w-full h-min-screen">
-            <section className="w-full h-screen flex flex-col justify-center items-center text-center px-4 py-8">
+            {/* <section className="w-full h-screen flex flex-col justify-center items-center text-center px-4 py-8">
                 <Image src="/home-page/sky.webp" alt="SkyHome" layout="fill" objectFit="cover" />
-            </section>
+            </section> */}
 
-            <ServiceProtected
-                title="Điều khoản và chính sách bảo mật của khách hàng"
-                description="SkyHome cung cấp các dịch vụ vệ sinh chuyên nghiệp dành cho các doanh nghiệp, giúp duy trì môi trường làm việc sạch sẽ và an toàn."
-            />
+            <Policy />
 
             <LeftImage
                 title="Lý do an tâm sử dụng dịch vụ của SkyHome"
@@ -50,7 +48,7 @@ export default function BusinessCustomers() {
                 />
             </section>
             <ContactChannels />
-            <SafetyPolicy />
+            <SafetyPolicyCommunications />
         </div>
     )
 }

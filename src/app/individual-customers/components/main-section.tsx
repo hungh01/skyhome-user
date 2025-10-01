@@ -1,12 +1,10 @@
-'use client';
+
 
 import NavigationButton from "@/components/button/navigation-button";
 import RightImage from "@/components/split-2-side/right-image";
-import { useViewportContext } from "@/providers/viewport-provider";
 import Image from "next/image";
 
 export default function MainSection() {
-    const { isMobile } = useViewportContext();
 
     return (
         <>

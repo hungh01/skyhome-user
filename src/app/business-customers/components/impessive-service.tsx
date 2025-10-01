@@ -112,7 +112,7 @@ export default function ImpressiveService() {
                             if (el) cardRefs.current[i] = el;
                         }}
                         onClick={() => setActive(i)}
-                        className={`relative flex flex-col bg-[#fded84] rounded-lg p-4 cursor-pointer h-full
+                        className={`relative flex flex-col bg-[#FDDB00] rounded-lg p-4 cursor-pointer h-full
                             ${active === i ? "items-start text-left" : "justify-center items-center"}
                         `}
                         style={{ flex: i === 0 ? 3 : 1 }}
