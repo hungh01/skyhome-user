@@ -64,7 +64,7 @@ export function Footer() {
                         <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Hỗ trợ</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
                             <li>Hotline: 096 292 7273</li>
-                            <li>Email: cskh@skyhome.net.vn</li>
+                            <li>Email: cskh@skyhomevietnam.com.vn</li>
                             <li>Câu hỏi thường gặp</li>
                             <li>Điều khoản sử dụng</li>
                         </ul>
