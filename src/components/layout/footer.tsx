@@ -82,7 +82,7 @@ export function Footer() {
 
                     {/* KH cá nhân */}
                     <div>
-                        <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">KH cá nhân</h3>
+                        <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Khách hàng cá nhân</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
                             <li>Vệ sinh theo giờ</li>
                             <li>Tổng vệ sinh</li>
@@ -95,7 +95,7 @@ export function Footer() {
 
                     {/* KH doanh nghiệp */}
                     <div>
-                        <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">KH doanh nghiệp</h3>
+                        <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Khách hàng doanh nghiệp</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
                             <li>Vệ sinh công nghiệp</li>
                             <li>Vệ sinh văn phòng</li>
