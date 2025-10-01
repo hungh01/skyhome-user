@@ -1,44 +1,45 @@
+
 import Image from "next/image";
 import Link from "next/link";
-
+const channels = [
+    {
+        id: 1,
+        icon: <Image src="/icons/social-media/without-bg/phone.png" alt="YouTube" width={100} height={100} className="w-6 h-6 text-sky-900" />,
+        title: "Hotline",
+        value: "096 292 7273",
+        link: "tel:0962927273"
+    },
+    {
+        id: 2,
+        icon: <Image src="/icons/social-media/without-bg/email.png" alt="E-mail" width={100} height={100} className="w-6 h-6 text-sky-900" />,
+        title: "E-mail",
+        value: "skyhomesocial@gmail.com",
+        link: "mailto:cskh@skyhomevietnam.com.vn"
+    },
+    {
+        id: 3,
+        icon: <Image src="/icons/social-media/without-bg/facebook.svg" alt="Facebook" width={100} height={100} className="w-6 h-6 text-sky-900" />,
+        title: "Facebook",
+        value: "SkyHome",
+        link: "https://www.facebook.com/skyhomevietnam"
+    },
+    {
+        id: 4,
+        icon: <Image src="/icons/social-media/without-bg/tiktok.png" alt="TikTok" width={100} height={100} className="w-6 h-6 text-sky-900" />,
+        title: "TikTok",
+        value: "SkyHome Service",
+        link: "https://www.tiktok.com/@skyhomevietnam"
+    },
+    {
+        id: 5,
+        icon: <Image src="/icons/social-media/without-bg/youtube.png" alt="YouTube" width={100} height={100} className="w-6 h-6 text-sky-900" />,
+        title: "YouTube",
+        value: "SkyHome",
+        link: "https://www.youtube.com/@skyhomevietnam"
+    },
+];
 export default function ContactChannels() {
-    const channels = [
-        {
-            id: 1,
-            icon: <Image src="/icons/social-media/without-bg/phone.png" alt="YouTube" width={100} height={100} className="w-6 h-6 text-sky-900" />,
-            title: "Hotline",
-            value: "096 292 7273",
-            link: "tel:0962927273"
-        },
-        {
-            id: 2,
-            icon: <Image src="/icons/social-media/without-bg/email.png" alt="E-mail" width={100} height={100} className="w-6 h-6 text-sky-900" />,
-            title: "E-mail",
-            value: "skyhomesocial@gmail.com",
-            link: "mailto:cskh@skyhomevietnam.com.vn"
-        },
-        {
-            id: 3,
-            icon: <Image src="/icons/social-media/without-bg/facebook.svg" alt="Facebook" width={100} height={100} className="w-6 h-6 text-sky-900" />,
-            title: "Facebook",
-            value: "SkyHome",
-            link: "https://www.facebook.com/skyhomevietnam"
-        },
-        {
-            id: 4,
-            icon: <Image src="/icons/social-media/without-bg/tiktok.png" alt="TikTok" width={100} height={100} className="w-6 h-6 text-sky-900" />,
-            title: "TikTok",
-            value: "SkyHome Service",
-            link: "https://www.tiktok.com/@skyhomevietnam"
-        },
-        {
-            id: 5,
-            icon: <Image src="/icons/social-media/without-bg/youtube.png" alt="YouTube" width={100} height={100} className="w-6 h-6 text-sky-900" />,
-            title: "YouTube",
-            value: "SkyHome",
-            link: "https://www.youtube.com/@skyhomevietnam"
-        },
-    ];
+
 
     return (
         <section className="w-full max-w-5xl mx-auto py-8 px-4 sm:px-6 text-center">
@@ -60,6 +61,7 @@ export default function ContactChannels() {
                     </Link>
                 ))}
             </div>
+
         </section>
     );
 }

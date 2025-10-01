@@ -11,10 +11,10 @@ interface LeftImageProps {
 export default function LeftImage({ image, content, title }: LeftImageProps) {
 
     return (
-        <section className="w-full min-h-screen relative overflow-hidden pt-3  align-center flex items-center">
-            <div className="relative z-20 md:w-[76%] mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <section className="w-full h-screen relative overflow-hidden  align-center flex items-center">
+            <div className="relative z-20 md:w-[76%] mx-auto px-4 sm:px-6 lg:px-8 h-full md:pt-20">
                 {title && (
-                    <h2 className="text-3xl md:text-6xl font-bold text-center mb-8 md:mb-40 text-sky-900">
+                    <h2 className="text-3xl md:text-6xl font-bold text-center mb-8 md:mb-0 text-sky-900">
                         {title}
                     </h2>
                 )}
