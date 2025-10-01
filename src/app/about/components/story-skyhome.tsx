@@ -41,7 +41,7 @@ export default function StorySkyhome() {
                                             alt={`Slide ${idx + 1}`}
                                             width={600}
                                             height={1020}
-                                            className="w-full h-full object-contain"
+                                            className="w-auto h-full object-contain  rounded-2xl"
                                         />
                                     </div>
                                 ))}
