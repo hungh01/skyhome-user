@@ -1,5 +1,6 @@
 'use client';
 
+import { useViewportContext } from "@/providers/viewport-provider";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -16,11 +17,11 @@ interface UserManualProps {
 
 export default function UserManual({ serviceName, steps }: UserManualProps) {
     const [currentStep, setCurrentStep] = useState(0);
-
+    const { isMobile } = useViewportContext();
     return (
-        <section className="w-[74%] min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 mx-auto py-8">
+        <section className={`${isMobile ? 'w-full' : 'w-[74%]'} min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 mx-auto py-8`}>
             {/* Right: mockup điện thoại */}
-            <div className="flex w-full lg:w-2/5 justify-start items-end mb-8 lg:mb-0">
+            <div className="flex w-full lg:w-2/5 justify-center lg:justify-start items-end mb-8 lg:mb-0">
                 <div className="w-[260px] sm:w-[340px] h-[480px] sm:h-full rounded-3xl flex items-center justify-center ">
                     <Image
                         src={steps[currentStep].imageSrc}

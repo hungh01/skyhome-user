@@ -56,7 +56,7 @@ export function Footer() {
                     </div>)}
                 </div>
             </div>
-            <div className="h1/2 mx-auto px-4 w-[74%] md:pt-4 sm:pt-2 lg:pt-8">
+            <div className="h1/2 mx-auto px-4 w-full md:w-[74%] md:pt-4 sm:pt-2 lg:pt-8">
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
 
                     {/* Hỗ trợ */}

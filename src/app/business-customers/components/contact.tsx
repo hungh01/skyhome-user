@@ -23,7 +23,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="w-[70%] mx-auto min-h-screen py-8 px-4 flex flex-col md:flex-row items-center justify-center gap-6">
+        <section className=" w-full lg:w-[70%] mx-auto min-h-screen py-8 px-4 flex flex-col md:flex-row items-center justify-center gap-6">
             {/* Left side - Image */}
             <div className="bg-gradient-to-r from-[#FDDB00] to-[#f9e55e] rounded-t-xl md:rounded-l-xl md:rounded-tr-none flex flex-col items-center justify-center p-6 md:p-8 w-full md:w-2/5 h-auto md:h-[70%] mb-4 md:mb-0">
                 <Image

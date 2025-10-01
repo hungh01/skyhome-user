@@ -8,7 +8,7 @@ import DownloadButton from "@/components/button/download-button";
 
 
 export function Header({ currentPage, sub }: { currentPage?: string, sub?: string[] }) {
-    const { width } = useViewportContext();
+    const { isMobile } = useViewportContext();
     const [scrollY, setScrollY] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -24,7 +24,7 @@ export function Header({ currentPage, sub }: { currentPage?: string, sub?: strin
             <header className={`shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white snap-start h-auto w-full`}>
                 <div className={`lg:w-[76%] w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center transition-all duration-300 ${scrollY > 200 ? 'h-16' : 'h-20'}`}>
                     {/* Desktop Layout */}
-                    {width > 1057 && (
+                    {!isMobile && (
                         <div className="hidden md:flex items-center justify-between w-full">
                             {/* Logo */}
                             <Link href="/" className="flex-shrink-0 cursor-pointer">
@@ -123,7 +123,7 @@ export function Header({ currentPage, sub }: { currentPage?: string, sub?: strin
                         </div>)}
 
                     {/* Mobile Layout */}
-                    {width < 1058 && (
+                    {isMobile && (
                         <div className=" w-full">
                             <div className={`flex items-center justify-between transition-all duration-300 ${scrollY > 200 ? 'h-16' : 'h-20'}`}>
                                 {/* Mobile menu dropdown */}

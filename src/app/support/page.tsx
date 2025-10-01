@@ -31,7 +31,7 @@ export default function BusinessCustomers() {
                     priority
                 />
             </div>
-            <div className="content z-10">
+            <div className="content z-10 md:pt-0 pt-20">
                 <Policy />
                 <WhyChooseOnSupport />
                 <CustomerCare />

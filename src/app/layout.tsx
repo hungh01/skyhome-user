@@ -1,6 +1,5 @@
 
 import "./globals.css";
-import { Header } from "@/components/layout/header";
 import { ViewportProvider } from "@/providers/viewport-provider";
 import { SkyHomeFont } from "@/config/font/fonts";
 import { Metadata } from "next";
@@ -27,7 +26,6 @@ export default function RootLayout({
       <body
         className={`min-h-screen antialiased  ${SkyHomeFont.className}`}>
         <ViewportProvider>
-          <Header />
           <div >
             {children}
           </div>

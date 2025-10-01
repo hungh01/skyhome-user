@@ -40,20 +40,32 @@ const items = [
         image: "/business-service/icons/thietbi.webp",
     },
 ];
-
 export default function ImpressiveService() {
     const [active, setActive] = useState<number>(0);
+    const [isMobile, setIsMobile] = useState(false);
 
     const cardRefs = useRef<HTMLDivElement[]>([]);
     const imageRefs = useRef<HTMLDivElement[]>([]);
     const textRefs = useRef<HTMLParagraphElement[]>([]);
-    const timelines = useRef<gsap.core.Timeline[]>([]); // lưu timeline
+    const timelines = useRef<gsap.core.Timeline[]>([]);
 
+    // Detect mobile
     useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 1024); // < lg breakpoint
+        };
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
+
+    // GSAP animation only if not mobile
+    useEffect(() => {
+        if (isMobile) return; // bỏ animation trên mobile
+
         cardRefs.current.forEach((card, i) => {
             if (!card) return;
 
-            // kill timeline cũ nếu tồn tại
             if (typeof timelines.current[i] !== "undefined") {
                 timelines.current[i]?.kill();
             }
@@ -62,9 +74,10 @@ export default function ImpressiveService() {
             timelines.current[i] = tl;
 
             if (active === i) {
-                // Expand card
                 tl.to(card, { flex: 3, duration: 0.8, ease: "power4.inOut" }, 0)
-                    .set([imageRefs.current[i], textRefs.current[i]], { pointerEvents: "auto" }) // bật interaction
+                    .set([imageRefs.current[i], textRefs.current[i]], {
+                        pointerEvents: "auto",
+                    })
                     .fromTo(
                         imageRefs.current[i],
                         { opacity: 0, x: -20 },
@@ -78,7 +91,6 @@ export default function ImpressiveService() {
                         "-=0.2"
                     );
             } else {
-                // Collapse card
                 tl.to(card, { flex: 1, duration: 0.8, ease: "power4.inOut" }, 0)
                     .to(
                         imageRefs.current[i],
@@ -92,65 +104,88 @@ export default function ImpressiveService() {
                     );
             }
         });
-    }, [active]);
+    }, [active, isMobile]);
 
     return (
-        <section className="w-[76%] h-screen mx-auto pt-16  flex flex-col items-center">
+        <section className="w-[90%] lg:w-[76%] min-h-screen mx-auto pt-16 flex flex-col items-center">
             {/* Heading */}
-            <div className="h-1/3 mx-auto flex items-center justify-center z-10">
-                <h1 className="text-4xl md:text-6xl font-bold text-center md:mb-2 text-sky-900">
+            <div className="h-auto lg:h-1/3 mx-auto flex items-center justify-center z-10 mb-6">
+                <h1 className="text-3xl md:text-5xl font-bold text-center text-sky-900">
                     Ưu điểm dịch vụ SkyHome
                 </h1>
             </div>
 
             {/* Cards */}
-            <div className="flex w-full mx-auto h-3/4 gap-2">
-                {items.map((item, i) => (
-                    <div
-                        key={item.id}
-                        ref={(el) => {
-                            if (el) cardRefs.current[i] = el;
-                        }}
-                        onClick={() => setActive(i)}
-                        className={`relative flex flex-col bg-[#FDDB00] rounded-lg p-4 cursor-pointer h-full
-                            ${active === i ? "items-start text-left" : "justify-center items-center"}
-                        `}
-                        style={{ flex: i === 0 ? 3 : 1 }}
-                    >
-                        {/* Title */}
-                        <h3 className="font-bold text-3xl text-sky-900 z-10">{item.title}</h3>
-
-                        {/* Content */}
-                        <div className="absolute inset-0 top-20 left-0 right-0 px-4 overflow-visible">
-                            {/* Image */}
-                            <div
-                                ref={(el) => {
-                                    if (el) imageRefs.current[i] = el;
-                                }}
-                                className="opacity-0 pointer-events-none"
-                            >
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    width={600}
-                                    height={200}
-                                    className="rounded-lg mb-2 w-1/2 mx-auto object-cover"
-                                />
-                            </div>
-
-                            {/* Text */}
-                            <p
-                                ref={(el) => {
-                                    if (el) textRefs.current[i] = el;
-                                }}
-                                className="text-xl text-gray-800 opacity-0 pointer-events-none"
-                            >
-                                {item.content}
-                            </p>
+            {isMobile ? (
+                // 👉 Mobile: show all cards expanded
+                <div className="flex flex-col gap-4 w-full">
+                    {items.map((item) => (
+                        <div
+                            key={item.id}
+                            className="bg-[#FDDB00] rounded-lg p-4 flex flex-col"
+                        >
+                            <h3 className="font-bold text-2xl text-sky-900 mb-2">
+                                {item.title}
+                            </h3>
+                            <Image
+                                src={item.image}
+                                alt={item.title}
+                                width={600}
+                                height={200}
+                                className="rounded-lg mb-2 w-2/3 mx-auto object-contain"
+                            />
+                            <p className="text-lg text-gray-800">{item.content}</p>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            ) : (
+                // 👉 Desktop: animated cards
+                <div className="flex w-full mx-auto h-[600px] gap-2">
+                    {items.map((item, i) => (
+                        <div
+                            key={item.id}
+                            ref={(el) => {
+                                if (el) cardRefs.current[i] = el;
+                            }}
+                            onClick={() => setActive(i)}
+                            className={`relative flex flex-col bg-[#FDDB00] rounded-lg p-4 cursor-pointer h-full
+                ${active === i ? "items-start text-left" : "justify-center items-center"}
+              `}
+                            style={{ flex: i === 0 ? 3 : 1 }}
+                        >
+                            <h3 className="font-bold text-3xl text-sky-900 z-10">
+                                {item.title}
+                            </h3>
+
+                            <div className="absolute inset-0 top-20 left-0 right-0 px-4 overflow-visible">
+                                <div
+                                    ref={(el) => {
+                                        if (el) imageRefs.current[i] = el;
+                                    }}
+                                    className="opacity-0 pointer-events-none"
+                                >
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        width={600}
+                                        height={200}
+                                        className="rounded-lg mb-2 w-1/2 mx-auto object-cover"
+                                    />
+                                </div>
+
+                                <p
+                                    ref={(el) => {
+                                        if (el) textRefs.current[i] = el;
+                                    }}
+                                    className="text-xl text-gray-800 opacity-0 pointer-events-none"
+                                >
+                                    {item.content}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            )}
         </section>
     );
 }

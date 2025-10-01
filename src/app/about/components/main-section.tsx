@@ -36,27 +36,27 @@ export default function MainSection() {
                             <br />
                             <span>Người Việt</span>
                         </h1>
-                        <p className="text-xs sm:text-lg text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
+                        <p className="text-base sm:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 opacity-90">
                             Luôn lắng nghe phản hồi, giải quyết vấn đề nhanh chóng <br /> và chuyên nghiệp để đảm bảo sự hài lòng tối đa
                         </p>
 
                         <NavigationButton text="Liên hệ với chúng tôi" href="/support" textsize={`${width < 850 ? 'text-sm' : 'text-base'}`} />
                     </div>
 
-                    {/* Right Content - Phone Mockup */}
-                    <div className=" h-screen flex-1 flex justify-center items-center lg:justify-center order-2 lg:order-2 mb-0 lg:mb-0 lg:pt-0">
-                        <div className="relative self-end">
-                            {isMobile &&
+                    {!isMobile &&
+                        <div className=" h-screen flex-1 flex justify-center items-center lg:justify-center order-2 lg:order-2 mb-0 lg:mb-0 lg:pt-0">
+                            <div className="relative self-end">
+
                                 <Image
                                     src="/about/hand-mobile.png"
                                     alt="Phone Mockup"
                                     width={200}
                                     height={200}
                                     className="w-full h-auto"
-                                />}
+                                />
+                            </div>
                         </div>
-
-                    </div>
+                    }
                 </div>
             </div>
         </section>
