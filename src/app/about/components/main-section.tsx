@@ -42,21 +42,6 @@ export default function MainSection() {
 
                         <NavigationButton text="Liên hệ với chúng tôi" href="/support" textsize={`${width < 850 ? 'text-sm' : 'text-base'}`} />
                     </div>
-
-                    {!isMobile &&
-                        <div className=" h-screen flex-1 flex justify-center items-center lg:justify-center order-2 lg:order-2 mb-0 lg:mb-0 lg:pt-0">
-                            <div className="relative self-end">
-
-                                <Image
-                                    src="/about/hand-mobile.png"
-                                    alt="Phone Mockup"
-                                    width={200}
-                                    height={200}
-                                    className="w-full h-auto"
-                                />
-                            </div>
-                        </div>
-                    }
                 </div>
             </div>
         </section>
