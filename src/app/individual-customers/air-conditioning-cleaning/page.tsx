@@ -91,7 +91,7 @@ const workFlow: WorkingStep[] = [
     {
         title: "Hoàn tất và bảo dưỡng định kỳ",
         description: "Lau khô, lắp lại các bộ phận và bật máy thử để kiểm tra hoạt động. Nên vệ sinh máy lạnh định kỳ 3–6 tháng/lần để không khí trong lành hơn, máy vận hành êm ái, tiết kiệm điện và tăng tuổi thọ.",
-        image: "/individual-service/steps/theogio/B1.webp"
+        image: "/individual-service/steps/theogio/B4.webp"
     }
 ];
 
