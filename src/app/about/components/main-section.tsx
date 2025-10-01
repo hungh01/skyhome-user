@@ -2,7 +2,6 @@
 
 import NavigationButton from "@/components/button/navigation-button";
 import { useViewportContext } from "@/providers/viewport-provider";
-import Image from "next/image";
 
 export default function MainSection() {
     const { isMobile, width } = useViewportContext();
