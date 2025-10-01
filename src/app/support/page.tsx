@@ -1,6 +1,5 @@
 
 'use client';
-import LeftImage from "@/components/split-2-side/left-image";
 import Image from "next/image";
 import ContactChannels from "./components/social";
 import SafetyPolicyCommunications from "./components/safety-policy-communications";
