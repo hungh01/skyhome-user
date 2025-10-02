@@ -13,7 +13,7 @@ const channels = [
         id: 2,
         icon: <Image src="/icons/social-media/without-bg/email.png" alt="E-mail" width={100} height={100} className="w-6 h-6 text-sky-900" />,
         title: "E-mail",
-        value: "skyhomesocial@gmail.com",
+        value: "cskh@skyhomevietnam.com.vn",
         link: "mailto:cskh@skyhomevietnam.com.vn"
     },
     {
@@ -21,21 +21,21 @@ const channels = [
         icon: <Image src="/icons/social-media/without-bg/facebook.svg" alt="Facebook" width={100} height={100} className="w-6 h-6 text-sky-900" />,
         title: "Facebook",
         value: "SkyHome",
-        link: "https://www.facebook.com/skyhomevietnam"
+        link: "https://www.facebook.com/skyhomevietnam.service"
     },
     {
         id: 4,
         icon: <Image src="/icons/social-media/without-bg/tiktok.png" alt="TikTok" width={100} height={100} className="w-6 h-6 text-sky-900" />,
         title: "TikTok",
         value: "SkyHome Service",
-        link: "https://www.tiktok.com/@skyhomevietnam"
+        link: "https://www.tiktok.com/@skyhomeservice"
     },
     {
         id: 5,
         icon: <Image src="/icons/social-media/without-bg/youtube.png" alt="YouTube" width={100} height={100} className="w-6 h-6 text-sky-900" />,
         title: "YouTube",
         value: "SkyHome",
-        link: "https://www.youtube.com/@skyhomevietnam"
+        link: "https://www.youtube.com/@SkyHomeService"
     },
 ];
 export default function ContactChannels() {

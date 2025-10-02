@@ -63,10 +63,18 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Hỗ trợ</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
-                            <li>Hotline: 096 292 7273</li>
-                            <li>Email: cskh@skyhomevietnam.com.vn</li>
-                            <li>Câu hỏi thường gặp</li>
-                            <li>Điều khoản sử dụng</li>
+                            <Link
+                                href="tel:0962927273"
+                            >Hotline: 096 292 7273</Link>
+                            <Link
+                                href="mailto:cskh@skyhomevietnam.com.vn"
+                            >Email: cskh@skyhomevietnam.com.vn</Link>
+                            <Link
+                                href="/support"
+                            >Câu hỏi thường gặp</Link>
+                            <Link
+                                href="/support"
+                            >Điều khoản sử dụng</Link>
                         </ul>
                     </div>
 
@@ -74,9 +82,15 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Công ty</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
-                            <li>Về chúng tôi</li>
-                            <li>Tin tức</li>
-                            <li>Tuyển dụng</li>
+                            <Link
+                                href="/about"
+                            >Về chúng tôi</Link>
+                            <Link
+                                href="/news"
+                            >Tin tức</Link>
+                            <Link
+                                href="#"
+                            >Tuyển dụng</Link>
                         </ul>
                     </div>
 
@@ -84,12 +98,24 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Khách hàng cá nhân</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
-                            <li>Vệ sinh theo giờ</li>
-                            <li>Tổng vệ sinh</li>
-                            <li>Vệ sinh máy lạnh</li>
-                            <li>Vệ sinh điều hoà</li>
-                            <li>Vệ sinh máy nóng lạnh</li>
-                            <li>Vệ sinh máy năng lượng mặt trời</li>
+                            <Link
+                                href="/individual-customers/hourly-cleaning"
+                            >Vệ sinh theo giờ</Link>
+                            <Link
+                                href="/individual-customers/total-cleaning"
+                            >Tổng vệ sinh</Link>
+                            <Link
+                                href="/individual-customers/air-conditioning-cleaning"
+                            >Vệ sinh máy lạnh</Link>
+                            <Link
+                                href="/individual-customers/water-heater-cleaning"
+                            >Vệ sinh máy nóng lạnh</Link>
+                            <Link
+                                href="/individual-customers/washing-machine-cleaning"
+                            >Vệ sinh máy giặt</Link>
+                            <Link
+                                href="/individual-customers/others"
+                            >Dịch vụ khác</Link>
                         </ul>
                     </div>
 
@@ -97,10 +123,18 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Khách hàng doanh nghiệp</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
-                            <li>Vệ sinh công nghiệp</li>
-                            <li>Vệ sinh văn phòng</li>
-                            <li>Vệ sinh homestay</li>
-                            <li>Vệ sinh khách sạn</li>
+                            <Link
+                                href="/business-customers"
+                            >Vệ sinh công nghiệp</Link>
+                            <Link
+                                href="/business-customers"
+                            >Vệ sinh văn phòng</Link>
+                            <Link
+                                href="/business-customers"
+                            >Vệ sinh homestay</Link>
+                            <Link
+                                href="/business-customers"
+                            >Vệ sinh khách sạn</Link>
                         </ul>
                     </div>
 
@@ -108,9 +142,15 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-gray-900 mb-2 md:mb-3 text-sm md:text-base">Cộng tác viên</h3>
                         <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-600">
-                            <li>Hướng dẫn đăng ký</li>
-                            <li>Chương trình đào tạo</li>
-                            <li>Cộng đồng SkyHome</li>
+                            <Link
+                                href="/support"
+                            >Hướng dẫn đăng ký</Link>
+                            <Link
+                                href="/support"
+                            >Chương trình đào tạo</Link>
+                            <Link
+                                href="/news"
+                            >Cộng đồng SkyHome</Link>
                         </ul>
                     </div>
                 </div>
@@ -124,13 +164,13 @@ export function Footer() {
                     <div className="flex flex-col items-center md:items-end">
                         <p className="text-xs md:text-sm text-gray-600 mb-1">Theo dõi các nền tảng</p>
                         <div className="flex space-x-3">
-                            <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center text-white ">
+                            <a href="https://www.facebook.com/skyhomevietnam.service" className="w-8 h-8 rounded-full flex items-center justify-center text-white ">
                                 <Image src="/icons/social-media/fb-icon.png" alt="Facebook" width={32} height={32} />
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center text-white ">
+                            <a href="https://www.youtube.com/@SkyHomeService" className="w-8 h-8 rounded-full flex items-center justify-center text-white ">
                                 <Image src="/icons/social-media/yt-icon.png" alt="YouTube" width={32} height={32} />
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center text-white ">
+                            <a href="https://www.tiktok.com/@skyhomeservice" className="w-8 h-8 rounded-full flex items-center justify-center text-white ">
                                 <Image src="/icons/social-media/tiktok-icon.png" alt="TikTok" width={32} height={32} />
                             </a>
                         </div>
