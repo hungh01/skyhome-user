@@ -7,7 +7,7 @@ export default function BriefEmployee() {
             id="section4"
             className="w-full h-auto flex items-center justify-center pt-10 lg:pt-20"
         >
-            <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center px-4 py-8">
+            <div className="w-[74%] container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center px-4 py-8">
                 {/* Left content */}
                 {/* Right image (move up on mobile) */}
                 <div className="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0 order-1 lg:order-2">
@@ -20,7 +20,7 @@ export default function BriefEmployee() {
                     />
                 </div>
                 {/* Left content */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center  order-2 lg:order-1">
+                <div className="w-full lg:w-1/2 flex flex-col justify-center items-start text-center  order-2 lg:order-1">
                     <div className="w-full lg:w-[80%]">
                         <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-sky-900 ">
                             <span>

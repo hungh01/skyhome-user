@@ -30,7 +30,7 @@ export default function WorkFlow({ items, title }: WhyChooseProps) {
                             />
                         </div>
                         <div className="flex flex-col justify-center p-4 md:p-8 w-full md:w-1/2">
-                            <h3 className="font-bold text-2xl md:text-4xl mb-2">{item.title}</h3>
+                            <h3 className="font-bold text-2xl md:text-4xl mb-2 text-sky-900">{item.title}</h3>
                             <p className={`text-base md:text-xl text-gray-700`}>
                                 {item.description}
                             </p>

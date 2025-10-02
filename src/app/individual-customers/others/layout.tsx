@@ -7,7 +7,7 @@ export default function Layout({ children }: {
 }) {
     return (
         <div>
-            <Header currentPage="/individual-customers" sub={["/others"]} />
+            <Header currentPage="/individual-customers" sub={["/total-cleaning"]} />
             {children}
             <Footer />
         </div>

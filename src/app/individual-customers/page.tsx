@@ -1,4 +1,5 @@
 'use client';
+import { Footer } from "@/components/layout/footer";
 import MainSection from "./components/main-section";
 import ServiceSection from "./components/ServiceSection";
 
@@ -12,6 +13,7 @@ export default function BusinessCustomers() {
                 <MainSection />
                 <ServiceSection />
             </div>
+            <Footer />
         </div>
     )
 }

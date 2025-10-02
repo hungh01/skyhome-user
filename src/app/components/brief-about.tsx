@@ -46,7 +46,7 @@ export function BriefAbout() {
 
             {/* Nửa dưới: ảnh chạy ngang */}
             <div className="h-1/2 w-screen overflow-hidden relative algin-center items-center">
-                <div ref={trackRef} className="flex w-[200%] absolute left-0 bottom-10 ">
+                <div ref={trackRef} className="flex w-[200%] absolute left-0 bottom-0 ">
                     {/* Nhân đôi ảnh để tạo vòng lặp */}
                     <Image src="/home-page/scroll-employee.webp" alt="slide1" width={2920} height={600} />
                     <Image src="/home-page/scroll-employee.webp" alt="slide2" width={2920} height={600} />

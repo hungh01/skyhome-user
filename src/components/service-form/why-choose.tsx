@@ -26,7 +26,7 @@ export default function WhyChoose({ items }: WhyChooseProps) {
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-sm md:text-xl mb-2">{item.title}</h3>
+                                <h3 className="font-bold text-base md:text-3xl mb-2 text-sky-900">{item.title}</h3>
                                 <p className="text-sm md:text-xl text-gray-700">
                                     {item.description}
                                 </p>
