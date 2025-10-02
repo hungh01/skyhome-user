@@ -21,7 +21,7 @@ const channels = [
         icon: <Image src="/icons/social-media/without-bg/facebook.svg" alt="Facebook" width={100} height={100} className="w-6 h-6 text-sky-900" />,
         title: "Facebook",
         value: "SkyHome",
-        link: "https://www.facebook.com/skyhomevietnam.service"
+        link: "https://www.facebook.com/skyhomeservice.vn/"
     },
     {
         id: 4,
