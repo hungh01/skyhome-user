@@ -39,7 +39,7 @@ export default function UserManual({ serviceName, steps }: UserManualProps) {
                     Hướng dẫn sử dụng dịch vụ
                     <br />
 
-                    <p className="pt-2 text-4xl lg:text-7xl">{serviceName}</p>
+                    <p className="pt-2 text-4xl lg:text-[58px]">{serviceName}</p>
                 </h2>
                 <ol className="space-y-4 w-full">
                     {steps.map((step, index) => (

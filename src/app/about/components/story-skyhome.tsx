@@ -25,7 +25,7 @@ export default function StorySkyhome() {
             id="section2"
             className="w-full min-h-screen flex flex-col items-center justify-center text-center px-2 sm:px-4 py-8"
         >
-            <div className="container md:w-[74%] w-full mx-auto flex flex-col items-center justify-center pt-8">
+            <div className="container md:w-[82%] w-full mx-auto flex flex-col items-center justify-center pt-8">
                 <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
                     {/* Left Side */}
                     <div className="w-full lg:w-1/2 flex flex-col items-start justify-start align-start px-0 sm:px-4 mb-8 lg:mb-0">

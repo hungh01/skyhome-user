@@ -42,7 +42,7 @@ export default function ContactChannels() {
 
 
     return (
-        <section className="w-full max-w-5xl mx-auto py-8 px-4 sm:px-6 text-center">
+        <section className="w-full max-w-5xl mx-auto py-20 md:py- px-4 sm:px-6 text-center">
             {/* Heading */}
             <h2 className="text-lg sm:text-xl md:text-4xl font-semibold text-sky-900 mb-8 sm:mb-10">
                 Kênh truyền thông và Hotline chăm sóc khách hàng
@@ -61,7 +61,6 @@ export default function ContactChannels() {
                     </Link>
                 ))}
             </div>
-
         </section>
     );
 }

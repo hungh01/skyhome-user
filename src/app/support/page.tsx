@@ -34,7 +34,7 @@ export default function BusinessCustomers() {
             <div className="content z-10 md:pt-0 pt-20">
                 <Policy />
                 <WhyChooseOnSupport />
-                <CustomerCare />
+                {/* <CustomerCare /> */}
                 <ContactChannels />
                 <SafetyPolicyCommunications />
             </div>

@@ -72,7 +72,7 @@ export default function SafetyPolicyCommunications() {
                     <Link
                         key={post.id}
                         href={`/support/safety-policy/${post.id}`}
-                        className={`bg-[#ffe9a8] rounded-lg p-4 md:p-6 cursor-pointer hover:shadow-lg transition ${index === 0 ? "md:col-span-2 md:row-span-2" : ""
+                        className={`bg-[#ffffff] rounded-lg p-4 md:p-6 cursor-pointer hover:shadow-lg transition ${index === 0 ? "md:col-span-2 md:row-span-2" : ""
                             }`}
                     >
                         <div className="flex flex-col items-start">

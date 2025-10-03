@@ -9,14 +9,14 @@ export default function Promotion() {
             </h2>
             <div className="w-[80%] mx-auto">
                 {/* Box vàng lớn */}
-                <div className="bg-yellow-300 rounded-2xl flex items-center justify-center  mb-8">
+                <div className="h-[50vh] bg-yellow-300 rounded-2xl flex items-center justify-center mb-8">
                     {/* Icon hoặc hình ảnh ưu đãi */}
                     <Image
                         src="/about/individual-customer.webp"
                         alt="Ưu đãi"
                         width={2080}
                         height={1120}
-                        className="w-full h-full  object-contain rounded-2xl"
+                        className="w-full h-full  object-cover rounded-2xl"
                     />
                 </div>
                 {/* Nội dung dưới box */}

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function SkyhomeCustomers() {
     return (
-        <section className="w-full min-h-screen pt-16 bg-white">
+        <section className="w-full md:w-[76%] mx-auto min-h-screen pt-16 bg-white">
             <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 md:mb-10 text-sky-900">
                 Khách hàng của SkyHome
             </h2>
-            <div className="flex flex-col gap-8 w-[94%] md:w-[72%] mx-auto">
+            <div className="flex flex-col gap-8  mx-auto">
                 {/* Individual Customer */}
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8">
                     <div className="w-full md:w-4/8 h-60 md:h-70 bg-gray-200 flex items-center justify-center rounded-2xl relative">
