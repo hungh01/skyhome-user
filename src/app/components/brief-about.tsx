@@ -27,7 +27,7 @@ export function BriefAbout() {
     return (
         <section id="section3" className={` flex flex-col w-full ${isMobile ? 'h-auto' : 'h-screen'} `}>
             {/* Nửa trên: Nội dung */}
-            <div className="h-1/2 flex flex-col justify-center items-center text-center px-4 mt-30">
+            <div className="h-1/2 flex flex-col justify-center items-center text-center px-4 mt-20">
                 <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-sky-900 pb-2">
                     SkyHome <span className={`${SkyHomeFont1.className} lg:text-[55px] text-4xl`}>Nghệ thuật</span>
                     <br />

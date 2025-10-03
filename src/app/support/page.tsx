@@ -6,7 +6,6 @@ import SafetyPolicyCommunications from "./components/safety-policy-communication
 import Policy from "./components/policy";
 import { useEffect } from "react";
 import { initParallaxBg } from "../animations/parallax-bg";
-import CustomerCare from "./components/customer-care";
 import WhyChooseOnSupport from "./components/why-choose";
 
 
