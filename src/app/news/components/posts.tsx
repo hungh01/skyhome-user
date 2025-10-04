@@ -5,41 +5,41 @@ const posts = [
     {
         id: 1,
         title: "Khám phá Skyhome: Không gian sống hiện đại",
-        description: "Giải pháp nhà ở thông minh, thiết kế tối ưu, tiện nghi hiện đại.",
+        description: "",
         content:
-            "Skyhome không chỉ là nơi ở mà còn là không gian sống lý tưởng với các tiện ích hiện đại, thiết kế thông minh và môi trường xanh mát. Tại đây, cư dân được trải nghiệm sự tiện nghi vượt trội, từ hệ thống quản lý thông minh đến các dịch vụ hỗ trợ tận tâm, mang lại cuộc sống an lành và hạnh phúc cho mọi gia đình.",
+            "SkyHome mang đến giải pháp vệ sinh toàn diện cho căn hộ, nhà ở, văn phòng và các không gian sống hiện đại. Chúng tôi hiểu rằng một môi trường sạch sẽ không chỉ giúp nâng tầm chất lượng sống mà còn tạo nên sự thoải mái, an toàn cho cả gia đình.",
         image: "/about/individual-customer.webp",
     },
     {
         id: 2,
-        title: "Tiện ích nổi bật tại Skyhome",
-        description: "Đầy đủ tiện ích: hồ bơi, gym, khu vui chơi trẻ em.",
+        title: "Tiện ích nổi bật tại SkyHome",
+        description: "Đa dạng tiện ích, phù hợp cho từng mục đích và từng đối tượng khách hàng.",
         content:
             "Skyhome được trang bị hệ thống tiện ích đa dạng như hồ bơi ngoài trời, phòng gym hiện đại, khu vui chơi trẻ em an toàn, khu BBQ và sân vườn xanh mát. Mỗi tiện ích đều được thiết kế nhằm phục vụ tối đa nhu cầu thư giãn, rèn luyện sức khỏe và gắn kết các thành viên trong gia đình.",
-        image: "/about/business-customer.webp",
+        image: "/news/post.png",
     },
     {
         id: 3,
-        title: "An ninh tuyệt đối tại Skyhome",
-        description: "An ninh 24/7, bảo vệ chuyên nghiệp, an toàn tuyệt đối.",
+        title: "An tâm sử dụng dịch vụ",
+        description: "Đội ngũ đối tác chuyên nghiệp, tận tâm và tỉ mỉ trong từng chi tiết.",
         content:
             "Skyhome áp dụng công nghệ an ninh tiên tiến với hệ thống camera giám sát toàn khu, kiểm soát ra vào bằng thẻ từ và đội ngũ bảo vệ túc trực 24/7. Nhờ đó, cư dân hoàn toàn yên tâm tận hưởng cuộc sống mà không phải lo lắng về các vấn đề an ninh.",
         image: "/news/post.png",
     },
     {
         id: 4,
-        title: "Skyhome – Gắn kết cộng đồng cư dân",
-        description: "Hoạt động cộng đồng sôi nổi, môi trường sống thân thiện.",
+        title: "SkyHome - Gắn kết cộng đồng",
+        description: "Đặt yếu tố con người lên hàng đầu, không chỉ gắn kết với khác hàng mà còn gắn kết tình người trong đời sống xa hội.",
         content:
             "Skyhome chú trọng xây dựng cộng đồng cư dân văn minh, thân thiện thông qua các sự kiện, hoạt động giao lưu, câu lạc bộ sở thích và chương trình thiện nguyện. Đây là nơi mọi người có thể kết nối, chia sẻ và cùng nhau xây dựng môi trường sống tốt đẹp.",
         image: "/news/post.png",
     },
     {
         id: 5,
-        title: "Đầu tư sinh lời cùng Skyhome",
-        description: "Vị trí đắc địa, tiềm năng phát triển, sinh lời bền vững.",
+        title: "SkyHome - Phát triển lối sống Xanh - Sạch - Đẹp",
+        description: "Không chỉ nâng cao giá trị sống mà ở SkyHome giá trị về môi trường và đạo đức con người cũng là 1 trong số giá trị được đánh giá cao.",
         content:
-            "Skyhome tọa lạc tại vị trí chiến lược, thuận tiện di chuyển đến các khu vực trung tâm và các tiện ích lân cận. Nhờ tiềm năng phát triển mạnh mẽ, giá trị bất động sản tại Skyhome không ngừng gia tăng, mang lại cơ hội sinh lời hấp dẫn cho các nhà đầu tư.",
+            "SkyHome tọa lạc tại vị trí chiến lược, thuận tiện di chuyển đến các khu vực trung tâm và các tiện ích lân cận. Nhờ tiềm năng phát triển mạnh mẽ, giá trị bất động sản tại SkyHome không ngừng gia tăng, mang lại cơ hội sinh lời hấp dẫn cho các nhà đầu tư.",
         image: "/news/post.png",
     },
 ];

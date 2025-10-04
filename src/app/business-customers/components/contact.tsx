@@ -25,32 +25,32 @@ export default function ContactForm() {
     };
 
     return (
-        <section className=" w-full lg:w-[70%] mx-auto min-h-screen py-8 px-4 flex flex-col md:flex-row items-center justify-center">
+        <section className=" w-full lg:w-[70%] mx-auto h-screen py-8 px-4 flex flex-col md:flex-row items-center justify-center">
             {/* Left side - Image */}
             {!isMobile &&
-                <div className="bg-gradient-to-r from-[#FDDB00] to-[#f9e55e] rounded-t-xl md:rounded-l-xl md:rounded-tr-none flex flex-col items-center justify-center p-6 md:p-8 w-full md:w-2/5 h-full mb-4 md:mb-0 gap-10">
+                <div className="bg-gradient-to-r from-[#FDDB00] to-[#f9e55e] rounded-t-xl md:rounded-l-xl md:rounded-tr-none flex flex-col items-center justify-center p-6 md:p-8 w-full md:w-2/5 h-[65%] mb-4 md:mb-0 gap-10">
                     <Image
                         src="/logo/white-logo.webp"
                         alt="SkyHome"
                         width={2080}
                         height={1050}
-                        className="max-w-[120px] md:max-w-[150px] mx-auto pb-6 md:pb-10"
+                        className="max-w-[50px] md:max-w-[100px] mx-auto pb-6 md:pb-10"
                     />
                     <Image
                         src="/business-service/equipments.webp"
                         alt="SkyHome"
                         width={2080}
                         height={1050}
-                        className="max-w-[180px] md:max-w-[300px] mx-auto"
+                        className="max-w-[90px] md:max-w-[200px] mx-auto"
                     />
                 </div>}
 
             {/* Right side - Form */}
-            <div className="bg-white rounded-b-xl md:rounded-xl shadow-[-8px_-8px_24px_0px_rgba(0,0,0,0.2)] w-full md:w-3/5 p-4 md:p-8 h-[80%]">
+            <div className="bg-white rounded-b-xl md:rounded-xl shadow-[-8px_-8px_24px_0px_rgba(0,0,0,0.2)] w-full md:w-3/5 p-4 md:p-8 h-[70%]">
                 <h3 className="text-2xl md:text-4xl font-bold text-sky-900 mb-4 md:mb-6 text-center md:text-left">
                     Liên hệ với SkyHome
                 </h3>
-                <form className="space-y-6 md:space-y-10" onSubmit={handleSubmit}>
+                <form className="space-y-2 md:space-y-5" onSubmit={handleSubmit}>
                     <input
                         type="text"
                         name="company"

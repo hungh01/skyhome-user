@@ -12,7 +12,7 @@ export default function Promotion() {
                 <div className="h-[50vh] bg-yellow-300 rounded-2xl flex items-center justify-center mb-8">
                     {/* Icon hoặc hình ảnh ưu đãi */}
                     <Image
-                        src="/about/individual-customer.webp"
+                        src="/news/promotion.webp"
                         alt="Ưu đãi"
                         width={2080}
                         height={1120}

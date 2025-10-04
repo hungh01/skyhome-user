@@ -129,7 +129,7 @@ export default function ImpressiveService() {
                                 alt={item.title}
                                 width={600}
                                 height={200}
-                                className="rounded-lg mb-2 w-2/3 mx-auto object-contain"
+                                className="rounded-lg mb-2 w-2/3 h-2/3 mx-auto object-contain"
                             />
                             <h3 className="font-bold text-2xl text-sky-900 mb-2 text-center">
                                 {item.title}
@@ -153,7 +153,7 @@ export default function ImpressiveService() {
               `}
                             style={{ flex: i === 0 ? 3 : 1 }}
                         >
-                            <div className="absolute inset-0 top-20 left-0 right-0 px-4 overflow-visible">
+                            <div className="absolute inset-0 top-10 left-0 right-0 px-4 overflow-visible">
                                 <div
                                     ref={(el) => {
                                         if (el) imageRefs.current[i] = el;
@@ -165,7 +165,7 @@ export default function ImpressiveService() {
                                         alt={item.title}
                                         width={600}
                                         height={200}
-                                        className="rounded-lg mb-2 w-1/2 mx-auto object-cover"
+                                        className="rounded-lg mb-2 w-2/5 h-2/5 mx-auto object-cover"
                                     />
                                 </div>
                                 <h3 className="font-bold text-3xl text-sky-900 z-10 text-center mb-5">
