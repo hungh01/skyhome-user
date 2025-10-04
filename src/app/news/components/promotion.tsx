@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Promotion() {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-center  py-12">
+        <section className="w-full h-auto flex flex-col items-center justify-center py-2 md:py-12">
             <h2 className="text-3xl md:text-6xl font-bold text-center mb-10 text-sky-900">
                 Ưu đãi hấp dẫn
             </h2>
